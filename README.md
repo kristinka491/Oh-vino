@@ -1,4 +1,4 @@
-# Oh-vino
+# Oh Vino
 > Oh Vino is an IOS app.
 
 
@@ -15,7 +15,7 @@
 
 
 ## Setup
-For installation of all third-party libraries just type in console pod install. Then open Subs Manager.xcodeproj.
+For installation of all third-party libraries just type in console pod install. Then open Oh Vino.xcodeproj.
 
 
 ## Project Status
