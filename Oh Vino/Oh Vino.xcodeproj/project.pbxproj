@@ -7,20 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8EA5B5DA293DFF7800F0AB09 /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B5D9293DFF7800F0AB09 /* GreetingViewController.swift */; };
+		8EA5B5E3293E01AD00F0AB09 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B5E2293E01AD00F0AB09 /* WelcomeView.swift */; };
+		8EA5B5E5293E01F600F0AB09 /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B5E4293E01F600F0AB09 /* DescriptionView.swift */; };
+		8EA5B5E7293E020800F0AB09 /* GetStartedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B5E6293E020700F0AB09 /* GetStartedView.swift */; };
+		8EA5B5E9293E022000F0AB09 /* WelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EA5B5E8293E022000F0AB09 /* WelcomeView.xib */; };
+		8EA5B5EB293E022D00F0AB09 /* DescriptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EA5B5EA293E022D00F0AB09 /* DescriptionView.xib */; };
+		8EA5B5ED293E023B00F0AB09 /* GetStartedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EA5B5EC293E023B00F0AB09 /* GetStartedView.xib */; };
+		8EA5B5F2293E02A300F0AB09 /* GreetingScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA5B5F1293E02A300F0AB09 /* GreetingScreen.storyboard */; };
+		8EA5B5F6293E034B00F0AB09 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B5F5293E034B00F0AB09 /* UIView+Extension.swift */; };
+		8EA5B5F8293E1C7900F0AB09 /* UINavigation+ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B5F7293E1C7900F0AB09 /* UINavigation+ViewControllerExtension.swift */; };
 		8EF132A12938DF52001C3A65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF132A02938DF52001C3A65 /* AppDelegate.swift */; };
 		8EF132A32938DF52001C3A65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF132A22938DF52001C3A65 /* SceneDelegate.swift */; };
-		8EF132A52938DF52001C3A65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF132A42938DF52001C3A65 /* ViewController.swift */; };
-		8EF132A82938DF52001C3A65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EF132A62938DF52001C3A65 /* Main.storyboard */; };
+		8EF132A52938DF52001C3A65 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF132A42938DF52001C3A65 /* LoginViewController.swift */; };
+		8EF132A82938DF52001C3A65 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EF132A62938DF52001C3A65 /* LoginScreen.storyboard */; };
 		8EF132AA2938DF59001C3A65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EF132A92938DF59001C3A65 /* Assets.xcassets */; };
 		8EF132AD2938DF59001C3A65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EF132AB2938DF59001C3A65 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8EA5B5D9293DFF7800F0AB09 /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
+		8EA5B5E2293E01AD00F0AB09 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		8EA5B5E4293E01F600F0AB09 /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
+		8EA5B5E6293E020700F0AB09 /* GetStartedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedView.swift; sourceTree = "<group>"; };
+		8EA5B5E8293E022000F0AB09 /* WelcomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeView.xib; sourceTree = "<group>"; };
+		8EA5B5EA293E022D00F0AB09 /* DescriptionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptionView.xib; sourceTree = "<group>"; };
+		8EA5B5EC293E023B00F0AB09 /* GetStartedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GetStartedView.xib; sourceTree = "<group>"; };
+		8EA5B5F1293E02A300F0AB09 /* GreetingScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GreetingScreen.storyboard; sourceTree = "<group>"; };
+		8EA5B5F5293E034B00F0AB09 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		8EA5B5F7293E1C7900F0AB09 /* UINavigation+ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigation+ViewControllerExtension.swift"; sourceTree = "<group>"; };
 		8EF1329D2938DF52001C3A65 /* Oh Vino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Oh Vino.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF132A02938DF52001C3A65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EF132A22938DF52001C3A65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8EF132A42938DF52001C3A65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8EF132A72938DF52001C3A65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8EF132A42938DF52001C3A65 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8EF132A72938DF52001C3A65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoginScreen.storyboard; sourceTree = "<group>"; };
 		8EF132A92938DF59001C3A65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EF132AC2938DF59001C3A65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EF132AE2938DF59001C3A65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +57,100 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8EA5B5D4293DFAB200F0AB09 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8EF132A42938DF52001C3A65 /* LoginViewController.swift */,
+				8EF132A62938DF52001C3A65 /* LoginScreen.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8EA5B5D5293DFACA00F0AB09 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		8EA5B5D6293DFAD500F0AB09 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8EA5B5D7293DFADE00F0AB09 /* Vine info */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Vine info";
+			sourceTree = "<group>";
+		};
+		8EA5B5D8293DFF5000F0AB09 /* Greeting */ = {
+			isa = PBXGroup;
+			children = (
+				8EA5B5DB293DFF7F00F0AB09 /* Custom views */,
+			);
+			path = Greeting;
+			sourceTree = "<group>";
+		};
+		8EA5B5DB293DFF7F00F0AB09 /* Custom views */ = {
+			isa = PBXGroup;
+			children = (
+				8EA5B5D9293DFF7800F0AB09 /* GreetingViewController.swift */,
+				8EA5B5F1293E02A300F0AB09 /* GreetingScreen.storyboard */,
+				8EA5B5EE293E024000F0AB09 /* Welcome */,
+				8EA5B5EF293E025100F0AB09 /* Description */,
+				8EA5B5F0293E026300F0AB09 /* GetStarted */,
+			);
+			path = "Custom views";
+			sourceTree = "<group>";
+		};
+		8EA5B5EE293E024000F0AB09 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				8EA5B5E2293E01AD00F0AB09 /* WelcomeView.swift */,
+				8EA5B5E8293E022000F0AB09 /* WelcomeView.xib */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		8EA5B5EF293E025100F0AB09 /* Description */ = {
+			isa = PBXGroup;
+			children = (
+				8EA5B5E4293E01F600F0AB09 /* DescriptionView.swift */,
+				8EA5B5EA293E022D00F0AB09 /* DescriptionView.xib */,
+			);
+			path = Description;
+			sourceTree = "<group>";
+		};
+		8EA5B5F0293E026300F0AB09 /* GetStarted */ = {
+			isa = PBXGroup;
+			children = (
+				8EA5B5E6293E020700F0AB09 /* GetStartedView.swift */,
+				8EA5B5EC293E023B00F0AB09 /* GetStartedView.xib */,
+			);
+			path = GetStarted;
+			sourceTree = "<group>";
+		};
+		8EA5B5F3293E032E00F0AB09 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8EA5B5F4293E033500F0AB09 /* Extension */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		8EA5B5F4293E033500F0AB09 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8EA5B5F5293E034B00F0AB09 /* UIView+Extension.swift */,
+				8EA5B5F7293E1C7900F0AB09 /* UINavigation+ViewControllerExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		8EF132942938DF52001C3A65 = {
 			isa = PBXGroup;
 			children = (
@@ -56,11 +170,10 @@
 		8EF1329F2938DF52001C3A65 /* Oh Vino */ = {
 			isa = PBXGroup;
 			children = (
+				8EA5B5F3293E032E00F0AB09 /* Helper */,
 				8EF132B42938E0A4001C3A65 /* Screens */,
 				8EF132B52938E0DC001C3A65 /* App */,
 				8EF132A22938DF52001C3A65 /* SceneDelegate.swift */,
-				8EF132A42938DF52001C3A65 /* ViewController.swift */,
-				8EF132A62938DF52001C3A65 /* Main.storyboard */,
 			);
 			path = "Oh Vino";
 			sourceTree = "<group>";
@@ -68,6 +181,11 @@
 		8EF132B42938E0A4001C3A65 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				8EA5B5D8293DFF5000F0AB09 /* Greeting */,
+				8EA5B5D4293DFAB200F0AB09 /* Login */,
+				8EA5B5D5293DFACA00F0AB09 /* Registration */,
+				8EA5B5D6293DFAD500F0AB09 /* Home */,
+				8EA5B5D7293DFADE00F0AB09 /* Vine info */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -151,7 +269,11 @@
 			files = (
 				8EF132AD2938DF59001C3A65 /* LaunchScreen.storyboard in Resources */,
 				8EF132AA2938DF59001C3A65 /* Assets.xcassets in Resources */,
-				8EF132A82938DF52001C3A65 /* Main.storyboard in Resources */,
+				8EA5B5EB293E022D00F0AB09 /* DescriptionView.xib in Resources */,
+				8EF132A82938DF52001C3A65 /* LoginScreen.storyboard in Resources */,
+				8EA5B5F2293E02A300F0AB09 /* GreetingScreen.storyboard in Resources */,
+				8EA5B5E9293E022000F0AB09 /* WelcomeView.xib in Resources */,
+				8EA5B5ED293E023B00F0AB09 /* GetStartedView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,21 +284,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EF132A52938DF52001C3A65 /* ViewController.swift in Sources */,
+				8EF132A52938DF52001C3A65 /* LoginViewController.swift in Sources */,
+				8EA5B5F6293E034B00F0AB09 /* UIView+Extension.swift in Sources */,
+				8EA5B5F8293E1C7900F0AB09 /* UINavigation+ViewControllerExtension.swift in Sources */,
+				8EA5B5E7293E020800F0AB09 /* GetStartedView.swift in Sources */,
+				8EA5B5DA293DFF7800F0AB09 /* GreetingViewController.swift in Sources */,
 				8EF132A12938DF52001C3A65 /* AppDelegate.swift in Sources */,
 				8EF132A32938DF52001C3A65 /* SceneDelegate.swift in Sources */,
+				8EA5B5E3293E01AD00F0AB09 /* WelcomeView.swift in Sources */,
+				8EA5B5E5293E01F600F0AB09 /* DescriptionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8EF132A62938DF52001C3A65 /* Main.storyboard */ = {
+		8EF132A62938DF52001C3A65 /* LoginScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8EF132A72938DF52001C3A65 /* Base */,
 			);
-			name = Main.storyboard;
+			name = LoginScreen.storyboard;
 			sourceTree = "<group>";
 		};
 		8EF132AB2938DF59001C3A65 /* LaunchScreen.storyboard */ = {
@@ -317,7 +445,7 @@
 				INFOPLIST_FILE = "Oh Vino/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = GreetingScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -344,7 +472,7 @@
 				INFOPLIST_FILE = "Oh Vino/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = GreetingScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
