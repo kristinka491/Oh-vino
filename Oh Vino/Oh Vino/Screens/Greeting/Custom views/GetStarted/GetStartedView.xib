@@ -33,13 +33,13 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enjoy this fantastic world of different wines with us. Let's become a sommelier." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvR-e6-hEY">
-                            <rect key="frame" x="20" y="100.5" width="374" height="92.5"/>
-                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="27"/>
+                            <rect key="frame" x="20" y="100.5" width="374" height="75"/>
+                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="22"/>
                             <color key="textColor" systemColor="systemGrayColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSw-97-Upt">
-                            <rect key="frame" x="20" y="233" width="374" height="50"/>
+                            <rect key="frame" x="20" y="215.5" width="374" height="50"/>
                             <color key="backgroundColor" red="0.61039102079999996" green="0.1183081344" blue="0.4259560704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="xWp-nN-xE2"/>

@@ -32,8 +32,8 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are happy to see you here! Hope that your wine jorney will be exciting!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRc-NQ-DYO">
-                            <rect key="frame" x="20" y="100.5" width="374" height="92.5"/>
-                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="27"/>
+                            <rect key="frame" x="20" y="154.5" width="374" height="50"/>
+                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="22"/>
                             <color key="textColor" systemColor="systemGrayColor"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -42,10 +42,9 @@
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="S4b-cs-yTe" secondAttribute="trailing" constant="20" id="28L-BZ-Gqx"/>
                         <constraint firstAttribute="trailing" secondItem="iRc-NQ-DYO" secondAttribute="trailing" constant="20" id="7od-WP-FxA"/>
+                        <constraint firstItem="iRc-NQ-DYO" firstAttribute="centerY" secondItem="QKo-Mh-Otz" secondAttribute="centerY" id="NLL-q9-KcA"/>
                         <constraint firstItem="S4b-cs-yTe" firstAttribute="top" secondItem="QKo-Mh-Otz" secondAttribute="top" constant="25" id="RVH-1h-GsJ"/>
                         <constraint firstItem="iRc-NQ-DYO" firstAttribute="leading" secondItem="QKo-Mh-Otz" secondAttribute="leading" constant="20" id="e2P-CD-tEd"/>
-                        <constraint firstItem="iRc-NQ-DYO" firstAttribute="top" secondItem="S4b-cs-yTe" secondAttribute="bottom" constant="30" id="fDf-xS-9hX"/>
-                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iRc-NQ-DYO" secondAttribute="bottom" constant="20" id="pvW-wj-NBK"/>
                         <constraint firstItem="S4b-cs-yTe" firstAttribute="leading" secondItem="QKo-Mh-Otz" secondAttribute="leading" constant="20" id="qo7-Il-AqF"/>
                     </constraints>
                 </view>
