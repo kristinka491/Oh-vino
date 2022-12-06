@@ -19,6 +19,8 @@ class LoginViewController: SetUpKeyboardViewController {
     @IBOutlet weak var rememberMeButton: UIButton!
 
     private let signInWithAppleButton = ASAuthorizationAppleIDButton(type: .signIn, style: .white)
+    private let realmDataStore = RealmDataStore.shared
+    private let userDefaults = UserDefaults.standard
     private var isButtonActive = false
 
     override func viewDidLoad() {
@@ -39,7 +41,19 @@ class LoginViewController: SetUpKeyboardViewController {
     }
 
     @IBAction func tappedSignInButton(_ sender: UIButton) {
-
+        if !usernameTextField.text.isEmptyOrNil && !passwordTextField.text.isEmptyOrNil {
+            if realmDataStore.getUser(username: usernameTextField.text ?? "", password: passwordTextField.text ?? "") != nil {
+                userDefaults.set(isButtonActive, forKey: UserDefaultsKeys.isUserRemembered)
+                userDefaults.set(true, forKey: UserDefaultsKeys.isUserLoggedIn)
+                userDefaults.set(usernameTextField.text, forKey: UserDefaultsKeys.currentUserLogin)
+                let controller = viewController(storyboardName: "HomeScreen", identifier: "HomeScreen", isNavigation: false)
+                navigationController?.pushViewController(controller, animated: true)
+            } else {
+                showAlert(alertText: "Please try again", alertMessage: "Wrong username or password", completion: nil)
+            }
+        } else {
+            showAlert(alertText: "Error", alertMessage: "Please enter username and password", completion: nil)
+        }
     }
 
     @IBAction func tappedHidePasswordButton(_ sender: UIButton) {

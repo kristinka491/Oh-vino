@@ -36,6 +36,14 @@ class RealmDataStore {
                                  forPrimaryKey: username)
     }
 
+    func getUser(username: String, password: String) -> User? {
+        if let user = getUser(with: username),
+           user.password == password {
+            return user
+        }
+        return nil
+    }
+
     func isUserRegistered(with username: String) -> Bool {
         return getUser(with: username) != nil
     }

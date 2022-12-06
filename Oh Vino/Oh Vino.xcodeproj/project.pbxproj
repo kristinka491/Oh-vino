@@ -28,6 +28,9 @@
 		8EA5B615293F760100F0AB09 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 8EA5B614293F760100F0AB09 /* Realm */; };
 		8EA5B617293F760100F0AB09 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8EA5B616293F760100F0AB09 /* RealmSwift */; };
 		8EA5B619293F802100F0AB09 /* LocalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B618293F802100F0AB09 /* LocalManager.swift */; };
+		8EA5B61C293F85A800F0AB09 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B61B293F85A800F0AB09 /* UserDefaultsKeys.swift */; };
+		8EA5B61E293F87C900F0AB09 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B61D293F87C900F0AB09 /* HomeViewController.swift */; };
+		8EA5B620293F87D800F0AB09 /* HomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA5B61F293F87D800F0AB09 /* HomeScreen.storyboard */; };
 		8EF132A12938DF52001C3A65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF132A02938DF52001C3A65 /* AppDelegate.swift */; };
 		8EF132A32938DF52001C3A65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF132A22938DF52001C3A65 /* SceneDelegate.swift */; };
 		8EF132A52938DF52001C3A65 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF132A42938DF52001C3A65 /* LoginViewController.swift */; };
@@ -57,6 +60,9 @@
 		8EA5B60F293F756700F0AB09 /* RealmDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDataStore.swift; sourceTree = "<group>"; };
 		8EA5B611293F757400F0AB09 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8EA5B618293F802100F0AB09 /* LocalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalManager.swift; sourceTree = "<group>"; };
+		8EA5B61B293F85A800F0AB09 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		8EA5B61D293F87C900F0AB09 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8EA5B61F293F87D800F0AB09 /* HomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeScreen.storyboard; sourceTree = "<group>"; };
 		8EF1329D2938DF52001C3A65 /* Oh Vino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Oh Vino.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF132A02938DF52001C3A65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EF132A22938DF52001C3A65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +107,8 @@
 		8EA5B5D6293DFAD500F0AB09 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				8EA5B61D293F87C900F0AB09 /* HomeViewController.swift */,
+				8EA5B61F293F87D800F0AB09 /* HomeScreen.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -162,6 +170,7 @@
 		8EA5B5F3293E032E00F0AB09 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				8EA5B61A293F859000F0AB09 /* Type */,
 				8EA5B5F4293E033500F0AB09 /* Extension */,
 			);
 			path = Helper;
@@ -210,6 +219,14 @@
 				8EA5B611293F757400F0AB09 /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		8EA5B61A293F859000F0AB09 /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				8EA5B61B293F85A800F0AB09 /* UserDefaultsKeys.swift */,
+			);
+			path = Type;
 			sourceTree = "<group>";
 		};
 		8EF132942938DF52001C3A65 = {
@@ -345,6 +362,7 @@
 				8EF132A82938DF52001C3A65 /* LoginScreen.storyboard in Resources */,
 				8EA5B5F2293E02A300F0AB09 /* GreetingScreen.storyboard in Resources */,
 				8EA5B5E9293E022000F0AB09 /* WelcomeView.xib in Resources */,
+				8EA5B620293F87D800F0AB09 /* HomeScreen.storyboard in Resources */,
 				8EA5B5ED293E023B00F0AB09 /* GetStartedView.xib in Resources */,
 				8EA5B601293E7E0E00F0AB09 /* RegistrationScreen.storyboard in Resources */,
 			);
@@ -359,8 +377,10 @@
 			files = (
 				8EA5B5FC293E7AC800F0AB09 /* SetUpKeyboardViewController.swift in Sources */,
 				8EF132A52938DF52001C3A65 /* LoginViewController.swift in Sources */,
+				8EA5B61E293F87C900F0AB09 /* HomeViewController.swift in Sources */,
 				8EA5B5F6293E034B00F0AB09 /* UIView+Extension.swift in Sources */,
 				8EA5B619293F802100F0AB09 /* LocalManager.swift in Sources */,
+				8EA5B61C293F85A800F0AB09 /* UserDefaultsKeys.swift in Sources */,
 				8EA5B60C293F6FC600F0AB09 /* AlertViewController+Extension.swift in Sources */,
 				8EA5B5FF293E7DF500F0AB09 /* RegistrationViewController.swift in Sources */,
 				8EA5B5F8293E1C7900F0AB09 /* UINavigation+ViewControllerExtension.swift in Sources */,
