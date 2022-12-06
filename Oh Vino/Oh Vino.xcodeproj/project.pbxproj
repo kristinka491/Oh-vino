@@ -20,6 +20,14 @@
 		8EA5B5FC293E7AC800F0AB09 /* SetUpKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B5FB293E7AC800F0AB09 /* SetUpKeyboardViewController.swift */; };
 		8EA5B5FF293E7DF500F0AB09 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B5FE293E7DF500F0AB09 /* RegistrationViewController.swift */; };
 		8EA5B601293E7E0E00F0AB09 /* RegistrationScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA5B600293E7E0E00F0AB09 /* RegistrationScreen.storyboard */; };
+		8EA5B605293F41A300F0AB09 /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B604293F41A300F0AB09 /* ImagePickerManager.swift */; };
+		8EA5B60A293F6F8800F0AB09 /* StringOptional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B609293F6F8800F0AB09 /* StringOptional+Extension.swift */; };
+		8EA5B60C293F6FC600F0AB09 /* AlertViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B60B293F6FC600F0AB09 /* AlertViewController+Extension.swift */; };
+		8EA5B610293F756700F0AB09 /* RealmDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B60F293F756700F0AB09 /* RealmDataStore.swift */; };
+		8EA5B612293F757400F0AB09 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B611293F757400F0AB09 /* User.swift */; };
+		8EA5B615293F760100F0AB09 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 8EA5B614293F760100F0AB09 /* Realm */; };
+		8EA5B617293F760100F0AB09 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8EA5B616293F760100F0AB09 /* RealmSwift */; };
+		8EA5B619293F802100F0AB09 /* LocalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B618293F802100F0AB09 /* LocalManager.swift */; };
 		8EF132A12938DF52001C3A65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF132A02938DF52001C3A65 /* AppDelegate.swift */; };
 		8EF132A32938DF52001C3A65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF132A22938DF52001C3A65 /* SceneDelegate.swift */; };
 		8EF132A52938DF52001C3A65 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF132A42938DF52001C3A65 /* LoginViewController.swift */; };
@@ -43,6 +51,12 @@
 		8EA5B5FB293E7AC800F0AB09 /* SetUpKeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpKeyboardViewController.swift; sourceTree = "<group>"; };
 		8EA5B5FE293E7DF500F0AB09 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		8EA5B600293E7E0E00F0AB09 /* RegistrationScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegistrationScreen.storyboard; sourceTree = "<group>"; };
+		8EA5B604293F41A300F0AB09 /* ImagePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
+		8EA5B609293F6F8800F0AB09 /* StringOptional+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringOptional+Extension.swift"; sourceTree = "<group>"; };
+		8EA5B60B293F6FC600F0AB09 /* AlertViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlertViewController+Extension.swift"; sourceTree = "<group>"; };
+		8EA5B60F293F756700F0AB09 /* RealmDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDataStore.swift; sourceTree = "<group>"; };
+		8EA5B611293F757400F0AB09 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8EA5B618293F802100F0AB09 /* LocalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalManager.swift; sourceTree = "<group>"; };
 		8EF1329D2938DF52001C3A65 /* Oh Vino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Oh Vino.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF132A02938DF52001C3A65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EF132A22938DF52001C3A65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EA5B617293F760100F0AB09 /* RealmSwift in Frameworks */,
+				8EA5B615293F760100F0AB09 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +172,8 @@
 			children = (
 				8EA5B5F5293E034B00F0AB09 /* UIView+Extension.swift */,
 				8EA5B5F7293E1C7900F0AB09 /* UINavigation+ViewControllerExtension.swift */,
+				8EA5B609293F6F8800F0AB09 /* StringOptional+Extension.swift */,
+				8EA5B60B293F6FC600F0AB09 /* AlertViewController+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -166,6 +184,32 @@
 				8EA5B5FB293E7AC800F0AB09 /* SetUpKeyboardViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		8EA5B606293F41AF00F0AB09 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8EA5B604293F41A300F0AB09 /* ImagePickerManager.swift */,
+				8EA5B618293F802100F0AB09 /* LocalManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		8EA5B60D293F753500F0AB09 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				8EA5B60E293F754000F0AB09 /* Model */,
+				8EA5B60F293F756700F0AB09 /* RealmDataStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		8EA5B60E293F754000F0AB09 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8EA5B611293F757400F0AB09 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		8EF132942938DF52001C3A65 = {
@@ -187,9 +231,11 @@
 		8EF1329F2938DF52001C3A65 /* Oh Vino */ = {
 			isa = PBXGroup;
 			children = (
+				8EA5B60D293F753500F0AB09 /* Store */,
 				8EA5B5FA293E41A100F0AB09 /* Oh Vino.entitlements */,
 				8EA5B5F3293E032E00F0AB09 /* Helper */,
 				8EA5B5FD293E7B2500F0AB09 /* Base */,
+				8EA5B606293F41AF00F0AB09 /* Manager */,
 				8EF132B42938E0A4001C3A65 /* Screens */,
 				8EF132B52938E0DC001C3A65 /* App */,
 				8EF132A22938DF52001C3A65 /* SceneDelegate.swift */,
@@ -244,6 +290,10 @@
 			dependencies = (
 			);
 			name = "Oh Vino";
+			packageProductDependencies = (
+				8EA5B614293F760100F0AB09 /* Realm */,
+				8EA5B616293F760100F0AB09 /* RealmSwift */,
+			);
 			productName = "Oh Vino";
 			productReference = 8EF1329D2938DF52001C3A65 /* Oh Vino.app */;
 			productType = "com.apple.product-type.application";
@@ -272,6 +322,9 @@
 				Base,
 			);
 			mainGroup = 8EF132942938DF52001C3A65;
+			packageReferences = (
+				8EA5B613293F760100F0AB09 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 8EF1329E2938DF52001C3A65 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -307,13 +360,19 @@
 				8EA5B5FC293E7AC800F0AB09 /* SetUpKeyboardViewController.swift in Sources */,
 				8EF132A52938DF52001C3A65 /* LoginViewController.swift in Sources */,
 				8EA5B5F6293E034B00F0AB09 /* UIView+Extension.swift in Sources */,
+				8EA5B619293F802100F0AB09 /* LocalManager.swift in Sources */,
+				8EA5B60C293F6FC600F0AB09 /* AlertViewController+Extension.swift in Sources */,
 				8EA5B5FF293E7DF500F0AB09 /* RegistrationViewController.swift in Sources */,
 				8EA5B5F8293E1C7900F0AB09 /* UINavigation+ViewControllerExtension.swift in Sources */,
+				8EA5B612293F757400F0AB09 /* User.swift in Sources */,
+				8EA5B610293F756700F0AB09 /* RealmDataStore.swift in Sources */,
+				8EA5B60A293F6F8800F0AB09 /* StringOptional+Extension.swift in Sources */,
 				8EA5B5E7293E020800F0AB09 /* GetStartedView.swift in Sources */,
 				8EA5B5DA293DFF7800F0AB09 /* GreetingViewController.swift in Sources */,
 				8EF132A12938DF52001C3A65 /* AppDelegate.swift in Sources */,
 				8EF132A32938DF52001C3A65 /* SceneDelegate.swift in Sources */,
 				8EA5B5E3293E01AD00F0AB09 /* WelcomeView.swift in Sources */,
+				8EA5B605293F41A300F0AB09 /* ImagePickerManager.swift in Sources */,
 				8EA5B5E5293E01F600F0AB09 /* DescriptionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,6 +595,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8EA5B613293F760100F0AB09 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8EA5B614293F760100F0AB09 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8EA5B613293F760100F0AB09 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		8EA5B616293F760100F0AB09 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8EA5B613293F760100F0AB09 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8EF132952938DF52001C3A65 /* Project object */;
 }

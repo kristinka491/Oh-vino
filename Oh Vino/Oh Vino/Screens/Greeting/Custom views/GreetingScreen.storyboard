@@ -21,7 +21,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="hHa-o4-KJP">
-                                <rect key="frame" x="149.5" y="822" width="115.5" height="40"/>
+                                <rect key="frame" x="149" y="822" width="116" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="SuY-Eu-eBX"/>
                                     <constraint firstAttribute="height" constant="40" id="VQE-Z9-aFp"/>
@@ -34,7 +34,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wq7-dt-ytM" secondAttribute="trailing" id="G1Y-Xb-ygs"/>
-                            <constraint firstItem="hHa-o4-KJP" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="LYf-d6-hYQ"/>
+                            <constraint firstItem="hHa-o4-KJP" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="JFN-TM-r2g"/>
                             <constraint firstItem="wq7-dt-ytM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="QbS-DF-K8q"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="wq7-dt-ytM" secondAttribute="bottom" id="lkx-2l-gND"/>
                             <constraint firstItem="wq7-dt-ytM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="voO-ot-5bD"/>

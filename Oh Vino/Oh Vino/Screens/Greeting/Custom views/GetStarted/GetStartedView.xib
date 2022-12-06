@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greetingBackground" translatesAutoresizingMaskIntoConstraints="NO" id="cOb-RJ-mko">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="866"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K0R-u8-x7m">
                     <rect key="frame" x="0.0" y="537.5" width="414" height="358.5"/>
@@ -42,7 +42,7 @@
                             <rect key="frame" x="20" y="215.5" width="374" height="50"/>
                             <color key="backgroundColor" red="0.61039102079999996" green="0.1183081344" blue="0.4259560704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="50" id="xWp-nN-xE2"/>
+                                <constraint firstAttribute="height" constant="50" id="UIB-RQ-hcJ"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -70,7 +70,7 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="cOb-RJ-mko" secondAttribute="bottom" constant="30" id="8Or-c8-T5O"/>
+                <constraint firstAttribute="bottom" secondItem="cOb-RJ-mko" secondAttribute="bottom" id="8Or-c8-T5O"/>
                 <constraint firstAttribute="bottom" secondItem="K0R-u8-x7m" secondAttribute="bottom" id="NvF-gj-3vD"/>
                 <constraint firstItem="K0R-u8-x7m" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Zn4-pd-2aw"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="K0R-u8-x7m" secondAttribute="trailing" id="n1l-X4-sHG"/>

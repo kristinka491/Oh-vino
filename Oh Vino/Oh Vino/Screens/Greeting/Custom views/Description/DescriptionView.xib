@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greetingBackground" translatesAutoresizingMaskIntoConstraints="NO" id="cgI-0o-GCM">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="866"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hSR-qx-S7Z">
                     <rect key="frame" x="0.0" y="537.5" width="414" height="358.5"/>
@@ -41,9 +41,11 @@
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstItem="e9i-Cc-9Zh" firstAttribute="leading" secondItem="hSR-qx-S7Z" secondAttribute="leading" constant="20" id="I7c-PG-u7e"/>
+                        <constraint firstItem="NdB-Lh-IVf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="e9i-Cc-9Zh" secondAttribute="bottom" constant="20" id="KAP-mQ-kty"/>
                         <constraint firstItem="e9i-Cc-9Zh" firstAttribute="top" secondItem="hSR-qx-S7Z" secondAttribute="top" constant="25" id="RKy-io-Pns"/>
                         <constraint firstAttribute="trailing" secondItem="e9i-Cc-9Zh" secondAttribute="trailing" constant="20" id="f5W-bw-yQq"/>
                         <constraint firstItem="NdB-Lh-IVf" firstAttribute="centerY" secondItem="hSR-qx-S7Z" secondAttribute="centerY" id="gZB-jG-3Ps"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="NdB-Lh-IVf" secondAttribute="bottom" constant="20" id="hZ5-YR-YLR"/>
                         <constraint firstAttribute="trailing" secondItem="NdB-Lh-IVf" secondAttribute="trailing" constant="20" id="xiy-Nf-KAI"/>
                         <constraint firstItem="NdB-Lh-IVf" firstAttribute="leading" secondItem="hSR-qx-S7Z" secondAttribute="leading" constant="20" id="y98-Ia-Ixg"/>
                     </constraints>
@@ -59,7 +61,7 @@
                 <constraint firstItem="hSR-qx-S7Z" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="1.6" id="Urh-sb-Out"/>
                 <constraint firstAttribute="bottom" secondItem="hSR-qx-S7Z" secondAttribute="bottom" id="YSb-zX-UgI"/>
                 <constraint firstItem="cgI-0o-GCM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="bJ0-2j-rrx"/>
-                <constraint firstAttribute="bottom" secondItem="cgI-0o-GCM" secondAttribute="bottom" constant="30" id="niG-tr-k2f"/>
+                <constraint firstAttribute="bottom" secondItem="cgI-0o-GCM" secondAttribute="bottom" id="niG-tr-k2f"/>
             </constraints>
             <point key="canvasLocation" x="139" y="83"/>
         </view>

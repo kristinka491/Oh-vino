@@ -10,15 +10,16 @@ import AuthenticationServices
 
 class LoginViewController: SetUpKeyboardViewController {
 
-    private let signInWithAppleButton = ASAuthorizationAppleIDButton(type: .signIn, style: .white)
-
     @IBOutlet weak var formsView: UIView!
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var appleContainerView: UIView!
     @IBOutlet weak var hidePasswordButton: UIButton!
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var rememberMeButton: UIButton!
 
+    private let signInWithAppleButton = ASAuthorizationAppleIDButton(type: .signIn, style: .white)
+    private var isButtonActive = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,9 +50,18 @@ class LoginViewController: SetUpKeyboardViewController {
     private func setPasswordToggleImage(_ button: UIButton) {
         if passwordTextField.isSecureTextEntry{
             button.setImage(UIImage(systemName: "eye"), for: .normal)
-        }else{
+        } else {
             button.setImage(UIImage(systemName: "eye.slash"), for: .normal)
         }
+    }
+
+    @IBAction private func tappedRememberMeButton(_ sender: UIButton) {
+        if isButtonActive {
+            rememberMeButton.setImage(UIImage(named: "unchecked"), for: .normal)
+        } else {
+            rememberMeButton.setImage(UIImage(named: "checked"), for: .normal)
+        }
+        isButtonActive = !isButtonActive
     }
 
     private func setUpformsView() {
@@ -86,34 +96,13 @@ extension LoginViewController: ASAuthorizationControllerDelegate{
 
     func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
         switch authorization.credential {
-           case let appleIDCredential as ASAuthorizationAppleIDCredential:
-
-               // Create an account in your system.
+        case let appleIDCredential as ASAuthorizationAppleIDCredential:
+            let username = appleIDCredential.user
             let firstName = appleIDCredential.fullName?.givenName
             let lastName = appleIDCredential.fullName?.familyName
-            let email = appleIDCredential.email
+        default:
             break
-
-//               // For the purpose of this demo app, store the `userIdentifier` in the keychain.
-//               self.saveUserInKeychain(userIdentifier)
-//
-//               // For the purpose of this demo app, show the Apple ID credential information in the `ResultViewController`.
-//               self.showResultViewController(userIdentifier: userIdentifier, fullName: fullName, email: email)
-//
-//           case let passwordCredential as ASPasswordCredential:
-//
-//               // Sign in using an existing iCloud Keychain credential.
-//               let username = passwordCredential.user
-//               let password = passwordCredential.password
-//
-//               // For the purpose of this demo app, show the password credential as an alert.
-//               DispatchQueue.main.async {
-//                   self.showPasswordCredentialAlert(username: username, password: password)
-//               }
-
-           default:
-               break
-           }
+        }
     }
 }
 

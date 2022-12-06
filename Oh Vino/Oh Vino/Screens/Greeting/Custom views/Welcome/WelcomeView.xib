@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greetingBackground" translatesAutoresizingMaskIntoConstraints="NO" id="cji-NF-dhL">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="866"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QKo-Mh-Otz">
                     <rect key="frame" x="0.0" y="537.5" width="414" height="358.5"/>
@@ -31,7 +31,7 @@
                             <color key="textColor" red="0.61039102079999996" green="0.1183081344" blue="0.4259560704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are happy to see you here! Hope that your wine jorney will be exciting!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRc-NQ-DYO">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are happy to see you here! Hope that your wine jorney will be exciting! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRc-NQ-DYO">
                             <rect key="frame" x="20" y="154.5" width="374" height="50"/>
                             <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="22"/>
                             <color key="textColor" systemColor="systemGrayColor"/>
@@ -46,6 +46,8 @@
                         <constraint firstItem="S4b-cs-yTe" firstAttribute="top" secondItem="QKo-Mh-Otz" secondAttribute="top" constant="25" id="RVH-1h-GsJ"/>
                         <constraint firstItem="iRc-NQ-DYO" firstAttribute="leading" secondItem="QKo-Mh-Otz" secondAttribute="leading" constant="20" id="e2P-CD-tEd"/>
                         <constraint firstItem="S4b-cs-yTe" firstAttribute="leading" secondItem="QKo-Mh-Otz" secondAttribute="leading" constant="20" id="qo7-Il-AqF"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iRc-NQ-DYO" secondAttribute="bottom" constant="20" id="tLW-WV-8B2"/>
+                        <constraint firstItem="iRc-NQ-DYO" firstAttribute="top" relation="greaterThanOrEqual" secondItem="S4b-cs-yTe" secondAttribute="bottom" constant="20" id="won-Sz-TOL"/>
                     </constraints>
                 </view>
             </subviews>
@@ -57,7 +59,7 @@
                 <constraint firstItem="cji-NF-dhL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="W9g-i3-JYz"/>
                 <constraint firstItem="cji-NF-dhL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Xxj-kk-Kqq"/>
                 <constraint firstItem="QKo-Mh-Otz" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="1.6" id="dTz-zn-4fu"/>
-                <constraint firstAttribute="bottom" secondItem="cji-NF-dhL" secondAttribute="bottom" constant="30" id="egf-Fg-lq3"/>
+                <constraint firstAttribute="bottom" secondItem="cji-NF-dhL" secondAttribute="bottom" id="egf-Fg-lq3"/>
                 <constraint firstItem="QKo-Mh-Otz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="pAr-f0-m7N"/>
                 <constraint firstAttribute="bottom" secondItem="QKo-Mh-Otz" secondAttribute="bottom" id="vMn-du-AXT"/>
             </constraints>

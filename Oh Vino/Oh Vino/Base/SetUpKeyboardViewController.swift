@@ -9,7 +9,7 @@ import UIKit
 
 class SetUpKeyboardViewController: UIViewController {
 
-    @IBOutlet weak var textField: UITextField!
+    var currentTextField: UITextField?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,13 +33,14 @@ class SetUpKeyboardViewController: UIViewController {
             NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
 
-    @objc private func keyboardWillShow(notification: NSNotification) {
+    @objc func keyboardWillShow(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             let keyboardFrame = view.convert(keyboardSize, from: nil)
-            if let textField = textField,
-               keyboardFrame.intersects(textField.frame) {
-                let spaceBetweenKeyboardAndTextField = textField.frame.maxY - keyboardFrame.origin.y + 20
-                view.frame.origin.y -= spaceBetweenKeyboardAndTextField
+            if let currentTextField = currentTextField,
+               let textFieldFrame = currentTextField.superview?.convert(currentTextField.frame, to: view),
+               keyboardFrame.intersects(textFieldFrame) {
+                let spaceBetweenKeyboardAndTextField = currentTextField.frame.maxY - keyboardFrame.origin.y + 10
+                view.frame.origin.y += spaceBetweenKeyboardAndTextField
             }
         }
     }
