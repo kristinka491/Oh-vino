@@ -58,27 +58,14 @@
                                             <action selector="tappedSignInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fWN-il-KoB"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Or sign in with" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ML-yO-lh5">
-                                        <rect key="frame" x="20" y="327.5" width="374" height="18.5"/>
-                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="16"/>
-                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XON-ie-atR">
-                                        <rect key="frame" x="20" y="366" width="374" height="50"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="2XT-L7-GKH"/>
-                                        </constraints>
-                                    </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="753" text="Don't have an account?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLp-Wy-k0T">
-                                        <rect key="frame" x="20" y="436" width="374" height="18.5"/>
+                                        <rect key="frame" x="20" y="317.5" width="374" height="18.5"/>
                                         <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="16"/>
                                         <color key="textColor" systemColor="systemGrayColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalCompressionResistancePriority="753" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMw-Of-FOS">
-                                        <rect key="frame" x="20" y="464.5" width="374" height="31"/>
+                                        <rect key="frame" x="20" y="346" width="374" height="31"/>
                                         <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="16"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Get one">
@@ -122,9 +109,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="XON-ie-atR" secondAttribute="trailing" constant="20" id="0P6-br-3cr"/>
                                     <constraint firstItem="W5d-ZG-iO4" firstAttribute="top" secondItem="8Y8-g3-FWK" secondAttribute="top" constant="20" id="2Fg-gB-krH"/>
-                                    <constraint firstItem="XON-ie-atR" firstAttribute="top" secondItem="5ML-yO-lh5" secondAttribute="bottom" constant="20" id="2pL-Re-rF9"/>
                                     <constraint firstItem="kAX-Uw-R0i" firstAttribute="bottom" secondItem="rFM-nr-I7M" secondAttribute="bottom" id="2pU-g8-oUe"/>
                                     <constraint firstItem="3WJ-3t-YHF" firstAttribute="bottom" secondItem="NXc-WD-wGp" secondAttribute="bottom" id="4PF-c7-vh5"/>
                                     <constraint firstItem="NXc-WD-wGp" firstAttribute="width" secondItem="NXc-WD-wGp" secondAttribute="height" multiplier="1:1" id="5dZ-zL-pkV"/>
@@ -137,13 +122,11 @@
                                     <constraint firstAttribute="trailing" secondItem="TMw-Of-FOS" secondAttribute="trailing" constant="20" id="E2Q-hT-3bD"/>
                                     <constraint firstItem="nYa-pq-0vg" firstAttribute="top" secondItem="NXc-WD-wGp" secondAttribute="bottom" constant="20" id="EkJ-YJ-sEa"/>
                                     <constraint firstItem="TMw-Of-FOS" firstAttribute="leading" secondItem="8Y8-g3-FWK" secondAttribute="leading" constant="20" id="F0b-Wj-Ii8"/>
-                                    <constraint firstItem="hLp-Wy-k0T" firstAttribute="top" secondItem="XON-ie-atR" secondAttribute="bottom" constant="20" id="LPa-H8-Trz"/>
                                     <constraint firstItem="TMw-Of-FOS" firstAttribute="top" secondItem="hLp-Wy-k0T" secondAttribute="bottom" constant="10" id="LR7-D5-yeC"/>
                                     <constraint firstItem="tHg-NE-Vkw" firstAttribute="leading" secondItem="8Y8-g3-FWK" secondAttribute="leading" constant="20" id="N0z-EM-xZK"/>
                                     <constraint firstItem="6HR-zP-7Rz" firstAttribute="top" secondItem="W5d-ZG-iO4" secondAttribute="bottom" constant="10" id="Om8-cn-BT1"/>
                                     <constraint firstItem="3WJ-3t-YHF" firstAttribute="top" secondItem="rFM-nr-I7M" secondAttribute="bottom" constant="15" id="WgF-zD-hs6"/>
                                     <constraint firstItem="3WJ-3t-YHF" firstAttribute="top" secondItem="NXc-WD-wGp" secondAttribute="top" id="XFy-r6-ABk"/>
-                                    <constraint firstAttribute="trailing" secondItem="5ML-yO-lh5" secondAttribute="trailing" constant="20" id="Xtz-Sb-iuT"/>
                                     <constraint firstItem="NXc-WD-wGp" firstAttribute="leading" secondItem="8Y8-g3-FWK" secondAttribute="leading" constant="20" id="Y0X-u2-S71"/>
                                     <constraint firstItem="nYa-pq-0vg" firstAttribute="leading" secondItem="8Y8-g3-FWK" secondAttribute="leading" constant="20" id="YkA-Lr-wmD"/>
                                     <constraint firstAttribute="trailing" secondItem="6HR-zP-7Rz" secondAttribute="trailing" constant="20" id="acR-EP-8hO"/>
@@ -154,11 +137,9 @@
                                     <constraint firstItem="6HR-zP-7Rz" firstAttribute="leading" secondItem="8Y8-g3-FWK" secondAttribute="leading" constant="20" id="hq9-on-1Y9"/>
                                     <constraint firstAttribute="trailing" secondItem="3WJ-3t-YHF" secondAttribute="trailing" constant="20" id="hrq-cy-c77"/>
                                     <constraint firstAttribute="trailing" secondItem="kAX-Uw-R0i" secondAttribute="trailing" constant="20" id="kSx-vC-wiL"/>
-                                    <constraint firstItem="XON-ie-atR" firstAttribute="leading" secondItem="8Y8-g3-FWK" secondAttribute="leading" constant="20" id="peU-mg-ABo"/>
-                                    <constraint firstItem="5ML-yO-lh5" firstAttribute="top" secondItem="nYa-pq-0vg" secondAttribute="bottom" constant="30" id="qai-7z-VkK"/>
                                     <constraint firstItem="hLp-Wy-k0T" firstAttribute="leading" secondItem="8Y8-g3-FWK" secondAttribute="leading" constant="20" id="sdN-zG-uLX"/>
+                                    <constraint firstItem="hLp-Wy-k0T" firstAttribute="top" secondItem="nYa-pq-0vg" secondAttribute="bottom" constant="20" id="uGh-Q3-aGC"/>
                                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="TMw-Of-FOS" secondAttribute="bottom" constant="20" id="xWm-pe-piQ"/>
-                                    <constraint firstItem="5ML-yO-lh5" firstAttribute="leading" secondItem="8Y8-g3-FWK" secondAttribute="leading" constant="20" id="yKr-qe-FuD"/>
                                     <constraint firstItem="tHg-NE-Vkw" firstAttribute="top" secondItem="6HR-zP-7Rz" secondAttribute="bottom" constant="30" id="zM8-f7-rop"/>
                                 </constraints>
                             </view>
@@ -177,7 +158,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="appleContainerView" destination="XON-ie-atR" id="1Sn-VL-I6C"/>
                         <outlet property="formsView" destination="8Y8-g3-FWK" id="Ksm-5h-elF"/>
                         <outlet property="hidePasswordButton" destination="kAX-Uw-R0i" id="dew-dX-PkA"/>
                         <outlet property="passwordTextField" destination="rFM-nr-I7M" id="Jz5-rT-Kkv"/>

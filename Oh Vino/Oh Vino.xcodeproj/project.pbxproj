@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D45E4E1C9973D63D63E88C3 /* Pods_Oh_Vino.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64F727740CF6AD72D301A905 /* Pods_Oh_Vino.framework */; };
 		8EA5B5DA293DFF7800F0AB09 /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B5D9293DFF7800F0AB09 /* GreetingViewController.swift */; };
 		8EA5B5E3293E01AD00F0AB09 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B5E2293E01AD00F0AB09 /* WelcomeView.swift */; };
 		8EA5B5E5293E01F600F0AB09 /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B5E4293E01F600F0AB09 /* DescriptionView.swift */; };
@@ -25,8 +26,6 @@
 		8EA5B60C293F6FC600F0AB09 /* AlertViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B60B293F6FC600F0AB09 /* AlertViewController+Extension.swift */; };
 		8EA5B610293F756700F0AB09 /* RealmDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B60F293F756700F0AB09 /* RealmDataStore.swift */; };
 		8EA5B612293F757400F0AB09 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B611293F757400F0AB09 /* User.swift */; };
-		8EA5B615293F760100F0AB09 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 8EA5B614293F760100F0AB09 /* Realm */; };
-		8EA5B617293F760100F0AB09 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8EA5B616293F760100F0AB09 /* RealmSwift */; };
 		8EA5B619293F802100F0AB09 /* LocalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B618293F802100F0AB09 /* LocalManager.swift */; };
 		8EA5B61C293F85A800F0AB09 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B61B293F85A800F0AB09 /* UserDefaultsKeys.swift */; };
 		8EA5B61E293F87C900F0AB09 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B61D293F87C900F0AB09 /* HomeViewController.swift */; };
@@ -40,6 +39,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		305197AB90A5F1F4242F381A /* Pods-Oh Vino.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oh Vino.release.xcconfig"; path = "Target Support Files/Pods-Oh Vino/Pods-Oh Vino.release.xcconfig"; sourceTree = "<group>"; };
+		57CF0C9F0B6A31BD99221D3F /* Pods-Oh Vino.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oh Vino.debug.xcconfig"; path = "Target Support Files/Pods-Oh Vino/Pods-Oh Vino.debug.xcconfig"; sourceTree = "<group>"; };
+		64F727740CF6AD72D301A905 /* Pods_Oh_Vino.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Oh_Vino.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EA5B5D9293DFF7800F0AB09 /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
 		8EA5B5E2293E01AD00F0AB09 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		8EA5B5E4293E01F600F0AB09 /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
@@ -78,14 +80,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EA5B617293F760100F0AB09 /* RealmSwift in Frameworks */,
-				8EA5B615293F760100F0AB09 /* Realm in Frameworks */,
+				2D45E4E1C9973D63D63E88C3 /* Pods_Oh_Vino.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58C6AC834775CB5565A3033D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57CF0C9F0B6A31BD99221D3F /* Pods-Oh Vino.debug.xcconfig */,
+				305197AB90A5F1F4242F381A /* Pods-Oh Vino.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7019A0BBEE7DED01FB7F40E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64F727740CF6AD72D301A905 /* Pods_Oh_Vino.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8EA5B5D4293DFAB200F0AB09 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +252,8 @@
 			children = (
 				8EF1329F2938DF52001C3A65 /* Oh Vino */,
 				8EF1329E2938DF52001C3A65 /* Products */,
+				58C6AC834775CB5565A3033D /* Pods */,
+				7019A0BBEE7DED01FB7F40E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -298,9 +318,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EF132B12938DF59001C3A65 /* Build configuration list for PBXNativeTarget "Oh Vino" */;
 			buildPhases = (
+				1EC6C0129732F6C36F12F33A /* [CP] Check Pods Manifest.lock */,
 				8EF132992938DF52001C3A65 /* Sources */,
 				8EF1329A2938DF52001C3A65 /* Frameworks */,
 				8EF1329B2938DF52001C3A65 /* Resources */,
+				B1CBA06F63749682414F59A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -308,8 +330,6 @@
 			);
 			name = "Oh Vino";
 			packageProductDependencies = (
-				8EA5B614293F760100F0AB09 /* Realm */,
-				8EA5B616293F760100F0AB09 /* RealmSwift */,
 			);
 			productName = "Oh Vino";
 			productReference = 8EF1329D2938DF52001C3A65 /* Oh Vino.app */;
@@ -340,7 +360,6 @@
 			);
 			mainGroup = 8EF132942938DF52001C3A65;
 			packageReferences = (
-				8EA5B613293F760100F0AB09 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 8EF1329E2938DF52001C3A65 /* Products */;
 			projectDirPath = "";
@@ -369,6 +388,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EC6C0129732F6C36F12F33A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Oh Vino-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1CBA06F63749682414F59A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Oh Vino/Pods-Oh Vino-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Oh Vino/Pods-Oh Vino-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Oh Vino/Pods-Oh Vino-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8EF132992938DF52001C3A65 /* Sources */ = {
@@ -537,6 +598,7 @@
 		};
 		8EF132B22938DF59001C3A65 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57CF0C9F0B6A31BD99221D3F /* Pods-Oh Vino.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -566,6 +628,7 @@
 		};
 		8EF132B32938DF59001C3A65 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 305197AB90A5F1F4242F381A /* Pods-Oh Vino.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -615,30 +678,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		8EA5B613293F760100F0AB09 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-swift";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		8EA5B614293F760100F0AB09 /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8EA5B613293F760100F0AB09 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = Realm;
-		};
-		8EA5B616293F760100F0AB09 /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8EA5B613293F760100F0AB09 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = RealmSwift;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8EF132952938DF52001C3A65 /* Project object */;
 }
