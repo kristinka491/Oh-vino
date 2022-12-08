@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -8,38 +8,38 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--Pairing-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="HomeScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="Oh_Vino" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PairingScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="PairingViewController" customModule="Oh_Vino" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="BSA-wA-z09">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Upr-mP-WU5">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="BSA-wA-z09" secondAttribute="trailing" id="OBv-Hd-G5J"/>
-                            <constraint firstAttribute="bottom" secondItem="BSA-wA-z09" secondAttribute="bottom" id="jSI-54-3ae"/>
-                            <constraint firstItem="BSA-wA-z09" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="lXt-1O-083"/>
-                            <constraint firstItem="BSA-wA-z09" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="nso-vI-h51"/>
+                            <constraint firstAttribute="bottom" secondItem="Upr-mP-WU5" secondAttribute="bottom" id="Hqk-M0-3tk"/>
+                            <constraint firstItem="Upr-mP-WU5" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="NYn-CN-vtu"/>
+                            <constraint firstItem="Upr-mP-WU5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="qQH-ur-h1X"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Upr-mP-WU5" secondAttribute="trailing" id="xIu-6j-HcU"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="5Oy-Ot-HR7"/>
+                    <tabBarItem key="tabBarItem" title="Pairing" image="magnifyingglass" catalog="system" id="APm-L0-Jic"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="992.75362318840587" y="30.803571428571427"/>
+            <point key="canvasLocation" x="-23" y="49"/>
         </scene>
     </scenes>
     <resources>
         <image name="Background" width="540" height="960"/>
-        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

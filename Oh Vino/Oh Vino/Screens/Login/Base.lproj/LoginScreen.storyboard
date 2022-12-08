@@ -45,7 +45,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYa-pq-0vg">
-                                        <rect key="frame" x="20" y="247.5" width="374" height="50"/>
+                                        <rect key="frame" x="20" y="257.5" width="374" height="50"/>
                                         <color key="backgroundColor" red="0.61039102079999996" green="0.1183081344" blue="0.4259560704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="NlK-oT-QYW"/>
@@ -59,13 +59,13 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="753" text="Don't have an account?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLp-Wy-k0T">
-                                        <rect key="frame" x="20" y="317.5" width="374" height="18.5"/>
+                                        <rect key="frame" x="20" y="327.5" width="374" height="18.5"/>
                                         <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="16"/>
                                         <color key="textColor" systemColor="systemGrayColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalCompressionResistancePriority="753" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMw-Of-FOS">
-                                        <rect key="frame" x="20" y="346" width="374" height="31"/>
+                                        <rect key="frame" x="20" y="356" width="374" height="31"/>
                                         <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="16"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Get one">
@@ -89,7 +89,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXc-WD-wGp">
-                                        <rect key="frame" x="20" y="207.5" width="20" height="20"/>
+                                        <rect key="frame" x="20" y="217.5" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="VHa-RC-7BW"/>
                                         </constraints>
@@ -101,7 +101,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3WJ-3t-YHF">
-                                        <rect key="frame" x="60" y="207.5" width="334" height="20"/>
+                                        <rect key="frame" x="50" y="217.5" width="344" height="20"/>
                                         <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="16"/>
                                         <color key="textColor" systemColor="systemGrayColor"/>
                                         <nil key="highlightedColor"/>
@@ -118,14 +118,14 @@
                                     <constraint firstItem="kAX-Uw-R0i" firstAttribute="leading" secondItem="rFM-nr-I7M" secondAttribute="trailing" constant="5" id="7jg-by-5kU"/>
                                     <constraint firstAttribute="trailing" secondItem="tHg-NE-Vkw" secondAttribute="trailing" constant="20" id="8bo-HD-GlJ"/>
                                     <constraint firstAttribute="trailing" secondItem="nYa-pq-0vg" secondAttribute="trailing" constant="20" id="DwL-jB-MPq"/>
-                                    <constraint firstItem="3WJ-3t-YHF" firstAttribute="leading" secondItem="NXc-WD-wGp" secondAttribute="trailing" constant="20" id="E1H-f2-9W0"/>
+                                    <constraint firstItem="3WJ-3t-YHF" firstAttribute="leading" secondItem="NXc-WD-wGp" secondAttribute="trailing" constant="10" id="E1H-f2-9W0"/>
                                     <constraint firstAttribute="trailing" secondItem="TMw-Of-FOS" secondAttribute="trailing" constant="20" id="E2Q-hT-3bD"/>
                                     <constraint firstItem="nYa-pq-0vg" firstAttribute="top" secondItem="NXc-WD-wGp" secondAttribute="bottom" constant="20" id="EkJ-YJ-sEa"/>
                                     <constraint firstItem="TMw-Of-FOS" firstAttribute="leading" secondItem="8Y8-g3-FWK" secondAttribute="leading" constant="20" id="F0b-Wj-Ii8"/>
                                     <constraint firstItem="TMw-Of-FOS" firstAttribute="top" secondItem="hLp-Wy-k0T" secondAttribute="bottom" constant="10" id="LR7-D5-yeC"/>
                                     <constraint firstItem="tHg-NE-Vkw" firstAttribute="leading" secondItem="8Y8-g3-FWK" secondAttribute="leading" constant="20" id="N0z-EM-xZK"/>
                                     <constraint firstItem="6HR-zP-7Rz" firstAttribute="top" secondItem="W5d-ZG-iO4" secondAttribute="bottom" constant="10" id="Om8-cn-BT1"/>
-                                    <constraint firstItem="3WJ-3t-YHF" firstAttribute="top" secondItem="rFM-nr-I7M" secondAttribute="bottom" constant="15" id="WgF-zD-hs6"/>
+                                    <constraint firstItem="3WJ-3t-YHF" firstAttribute="top" secondItem="rFM-nr-I7M" secondAttribute="bottom" constant="25" id="WgF-zD-hs6"/>
                                     <constraint firstItem="3WJ-3t-YHF" firstAttribute="top" secondItem="NXc-WD-wGp" secondAttribute="top" id="XFy-r6-ABk"/>
                                     <constraint firstItem="NXc-WD-wGp" firstAttribute="leading" secondItem="8Y8-g3-FWK" secondAttribute="leading" constant="20" id="Y0X-u2-S71"/>
                                     <constraint firstItem="nYa-pq-0vg" firstAttribute="leading" secondItem="8Y8-g3-FWK" secondAttribute="leading" constant="20" id="YkA-Lr-wmD"/>

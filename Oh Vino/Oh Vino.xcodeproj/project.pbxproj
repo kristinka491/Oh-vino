@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		2D45E4E1C9973D63D63E88C3 /* Pods_Oh_Vino.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64F727740CF6AD72D301A905 /* Pods_Oh_Vino.framework */; };
+		8E484B632940AB60002FD4F4 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E484B622940AB60002FD4F4 /* FavoritesViewController.swift */; };
+		8E484B652940AB75002FD4F4 /* FavoritesScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E484B642940AB75002FD4F4 /* FavoritesScreen.storyboard */; };
+		8E484B672940AB8A002FD4F4 /* PairingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E484B662940AB8A002FD4F4 /* PairingViewController.swift */; };
+		8E484B692940AB9D002FD4F4 /* PairingScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E484B682940AB9D002FD4F4 /* PairingScreen.storyboard */; };
+		8E484B6B2940ABB0002FD4F4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E484B6A2940ABB0002FD4F4 /* ProfileViewController.swift */; };
+		8E484B6D2940ABBF002FD4F4 /* ProfileScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E484B6C2940ABBF002FD4F4 /* ProfileScreen.storyboard */; };
+		8E484B6F2940AC2F002FD4F4 /* VineInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E484B6E2940AC2F002FD4F4 /* VineInfoViewController.swift */; };
+		8E484B712940AC42002FD4F4 /* VineInfoScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E484B702940AC42002FD4F4 /* VineInfoScreen.storyboard */; };
+		8E484B762940AE75002FD4F4 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E484B752940AE75002FD4F4 /* TabBarViewController.swift */; };
+		8E484B782940AE8E002FD4F4 /* TabBarScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E484B772940AE8E002FD4F4 /* TabBarScreen.storyboard */; };
+		8E484B7B2941E3C9002FD4F4 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E484B7A2941E3C9002FD4F4 /* EditProfileViewController.swift */; };
+		8E484B7D2941E3DE002FD4F4 /* EditProfileScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E484B7C2941E3DE002FD4F4 /* EditProfileScreen.storyboard */; };
 		8EA5B5DA293DFF7800F0AB09 /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B5D9293DFF7800F0AB09 /* GreetingViewController.swift */; };
 		8EA5B5E3293E01AD00F0AB09 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B5E2293E01AD00F0AB09 /* WelcomeView.swift */; };
 		8EA5B5E5293E01F600F0AB09 /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B5E4293E01F600F0AB09 /* DescriptionView.swift */; };
@@ -42,6 +54,18 @@
 		305197AB90A5F1F4242F381A /* Pods-Oh Vino.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oh Vino.release.xcconfig"; path = "Target Support Files/Pods-Oh Vino/Pods-Oh Vino.release.xcconfig"; sourceTree = "<group>"; };
 		57CF0C9F0B6A31BD99221D3F /* Pods-Oh Vino.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oh Vino.debug.xcconfig"; path = "Target Support Files/Pods-Oh Vino/Pods-Oh Vino.debug.xcconfig"; sourceTree = "<group>"; };
 		64F727740CF6AD72D301A905 /* Pods_Oh_Vino.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Oh_Vino.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E484B622940AB60002FD4F4 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		8E484B642940AB75002FD4F4 /* FavoritesScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavoritesScreen.storyboard; sourceTree = "<group>"; };
+		8E484B662940AB8A002FD4F4 /* PairingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingViewController.swift; sourceTree = "<group>"; };
+		8E484B682940AB9D002FD4F4 /* PairingScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PairingScreen.storyboard; sourceTree = "<group>"; };
+		8E484B6A2940ABB0002FD4F4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8E484B6C2940ABBF002FD4F4 /* ProfileScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileScreen.storyboard; sourceTree = "<group>"; };
+		8E484B6E2940AC2F002FD4F4 /* VineInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VineInfoViewController.swift; sourceTree = "<group>"; };
+		8E484B702940AC42002FD4F4 /* VineInfoScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VineInfoScreen.storyboard; sourceTree = "<group>"; };
+		8E484B752940AE75002FD4F4 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		8E484B772940AE8E002FD4F4 /* TabBarScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarScreen.storyboard; sourceTree = "<group>"; };
+		8E484B7A2941E3C9002FD4F4 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		8E484B7C2941E3DE002FD4F4 /* EditProfileScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditProfileScreen.storyboard; sourceTree = "<group>"; };
 		8EA5B5D9293DFF7800F0AB09 /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
 		8EA5B5E2293E01AD00F0AB09 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		8EA5B5E4293E01F600F0AB09 /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
@@ -104,6 +128,51 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8E484B5F2940AB25002FD4F4 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				8E484B622940AB60002FD4F4 /* FavoritesViewController.swift */,
+				8E484B642940AB75002FD4F4 /* FavoritesScreen.storyboard */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		8E484B602940AB31002FD4F4 /* Pairing */ = {
+			isa = PBXGroup;
+			children = (
+				8E484B662940AB8A002FD4F4 /* PairingViewController.swift */,
+				8E484B682940AB9D002FD4F4 /* PairingScreen.storyboard */,
+			);
+			path = Pairing;
+			sourceTree = "<group>";
+		};
+		8E484B612940AB40002FD4F4 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				8E484B6A2940ABB0002FD4F4 /* ProfileViewController.swift */,
+				8E484B6C2940ABBF002FD4F4 /* ProfileScreen.storyboard */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		8E484B722940AE15002FD4F4 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				8E484B752940AE75002FD4F4 /* TabBarViewController.swift */,
+				8E484B772940AE8E002FD4F4 /* TabBarScreen.storyboard */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		8E484B792941E3A6002FD4F4 /* Edit profile */ = {
+			isa = PBXGroup;
+			children = (
+				8E484B7A2941E3C9002FD4F4 /* EditProfileViewController.swift */,
+				8E484B7C2941E3DE002FD4F4 /* EditProfileScreen.storyboard */,
+			);
+			path = "Edit profile";
+			sourceTree = "<group>";
+		};
 		8EA5B5D4293DFAB200F0AB09 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +203,8 @@
 		8EA5B5D7293DFADE00F0AB09 /* Vine info */ = {
 			isa = PBXGroup;
 			children = (
+				8E484B6E2940AC2F002FD4F4 /* VineInfoViewController.swift */,
+				8E484B702940AC42002FD4F4 /* VineInfoScreen.storyboard */,
 			);
 			path = "Vine info";
 			sourceTree = "<group>";
@@ -142,6 +213,8 @@
 			isa = PBXGroup;
 			children = (
 				8EA5B5DB293DFF7F00F0AB09 /* Custom views */,
+				8EA5B5D9293DFF7800F0AB09 /* GreetingViewController.swift */,
+				8EA5B5F1293E02A300F0AB09 /* GreetingScreen.storyboard */,
 			);
 			path = Greeting;
 			sourceTree = "<group>";
@@ -149,8 +222,6 @@
 		8EA5B5DB293DFF7F00F0AB09 /* Custom views */ = {
 			isa = PBXGroup;
 			children = (
-				8EA5B5D9293DFF7800F0AB09 /* GreetingViewController.swift */,
-				8EA5B5F1293E02A300F0AB09 /* GreetingScreen.storyboard */,
 				8EA5B5EE293E024000F0AB09 /* Welcome */,
 				8EA5B5EF293E025100F0AB09 /* Description */,
 				8EA5B5F0293E026300F0AB09 /* GetStarted */,
@@ -274,6 +345,7 @@
 				8EA5B5FD293E7B2500F0AB09 /* Base */,
 				8EA5B606293F41AF00F0AB09 /* Manager */,
 				8EF132B42938E0A4001C3A65 /* Screens */,
+				8E484B792941E3A6002FD4F4 /* Edit profile */,
 				8EF132B52938E0DC001C3A65 /* App */,
 				8EF132A22938DF52001C3A65 /* SceneDelegate.swift */,
 			);
@@ -286,8 +358,12 @@
 				8EA5B5D8293DFF5000F0AB09 /* Greeting */,
 				8EA5B5D4293DFAB200F0AB09 /* Login */,
 				8EA5B5D5293DFACA00F0AB09 /* Registration */,
+				8E484B722940AE15002FD4F4 /* Tabbar */,
 				8EA5B5D6293DFAD500F0AB09 /* Home */,
 				8EA5B5D7293DFADE00F0AB09 /* Vine info */,
+				8E484B5F2940AB25002FD4F4 /* Favorites */,
+				8E484B602940AB31002FD4F4 /* Pairing */,
+				8E484B612940AB40002FD4F4 /* Profile */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -375,14 +451,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E484B6D2940ABBF002FD4F4 /* ProfileScreen.storyboard in Resources */,
 				8EF132AD2938DF59001C3A65 /* LaunchScreen.storyboard in Resources */,
+				8E484B7D2941E3DE002FD4F4 /* EditProfileScreen.storyboard in Resources */,
+				8E484B692940AB9D002FD4F4 /* PairingScreen.storyboard in Resources */,
 				8EF132AA2938DF59001C3A65 /* Assets.xcassets in Resources */,
 				8EA5B5EB293E022D00F0AB09 /* DescriptionView.xib in Resources */,
 				8EF132A82938DF52001C3A65 /* LoginScreen.storyboard in Resources */,
 				8EA5B5F2293E02A300F0AB09 /* GreetingScreen.storyboard in Resources */,
 				8EA5B5E9293E022000F0AB09 /* WelcomeView.xib in Resources */,
+				8E484B652940AB75002FD4F4 /* FavoritesScreen.storyboard in Resources */,
 				8EA5B620293F87D800F0AB09 /* HomeScreen.storyboard in Resources */,
+				8E484B712940AC42002FD4F4 /* VineInfoScreen.storyboard in Resources */,
 				8EA5B5ED293E023B00F0AB09 /* GetStartedView.xib in Resources */,
+				8E484B782940AE8E002FD4F4 /* TabBarScreen.storyboard in Resources */,
 				8EA5B601293E7E0E00F0AB09 /* RegistrationScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +524,7 @@
 				8EA5B5F6293E034B00F0AB09 /* UIView+Extension.swift in Sources */,
 				8EA5B619293F802100F0AB09 /* LocalManager.swift in Sources */,
 				8EA5B61C293F85A800F0AB09 /* UserDefaultsKeys.swift in Sources */,
+				8E484B6B2940ABB0002FD4F4 /* ProfileViewController.swift in Sources */,
 				8EA5B60C293F6FC600F0AB09 /* AlertViewController+Extension.swift in Sources */,
 				8EA5B5FF293E7DF500F0AB09 /* RegistrationViewController.swift in Sources */,
 				8EA5B5F8293E1C7900F0AB09 /* UINavigation+ViewControllerExtension.swift in Sources */,
@@ -449,11 +532,16 @@
 				8EA5B610293F756700F0AB09 /* RealmDataStore.swift in Sources */,
 				8EA5B60A293F6F8800F0AB09 /* StringOptional+Extension.swift in Sources */,
 				8EA5B5E7293E020800F0AB09 /* GetStartedView.swift in Sources */,
+				8E484B672940AB8A002FD4F4 /* PairingViewController.swift in Sources */,
 				8EA5B5DA293DFF7800F0AB09 /* GreetingViewController.swift in Sources */,
+				8E484B762940AE75002FD4F4 /* TabBarViewController.swift in Sources */,
 				8EF132A12938DF52001C3A65 /* AppDelegate.swift in Sources */,
 				8EF132A32938DF52001C3A65 /* SceneDelegate.swift in Sources */,
 				8EA5B5E3293E01AD00F0AB09 /* WelcomeView.swift in Sources */,
 				8EA5B605293F41A300F0AB09 /* ImagePickerManager.swift in Sources */,
+				8E484B632940AB60002FD4F4 /* FavoritesViewController.swift in Sources */,
+				8E484B6F2940AC2F002FD4F4 /* VineInfoViewController.swift in Sources */,
+				8E484B7B2941E3C9002FD4F4 /* EditProfileViewController.swift in Sources */,
 				8EA5B5E5293E01F600F0AB09 /* DescriptionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

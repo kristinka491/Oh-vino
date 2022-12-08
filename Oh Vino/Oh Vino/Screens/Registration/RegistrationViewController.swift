@@ -19,6 +19,7 @@ class RegistrationViewController: SetUpKeyboardViewController {
     private let imagePickerManager = ImagePickerManager.shared
     private let realmDataStore = RealmDataStore.shared
     private let localManager = LocalManager()
+    private var isImageSet = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,7 @@ class RegistrationViewController: SetUpKeyboardViewController {
         setUpAvatarImage()
         setUpCreateAccountButton()
         setUpGestureRecognizer()
+        navigationController?.navigationBar.isHidden = true
         currentTextField = passwordTextField
     }
 
@@ -78,15 +80,19 @@ class RegistrationViewController: SetUpKeyboardViewController {
     @objc private func didTapImageView(_ sender: UITapGestureRecognizer) {
         imagePickerManager.showActionSheet(vc: self) { [weak self] image, _ in
             self?.avatarImageView.image = image
+            self?.isImageSet = true
         }
     }
 
     private func registerUser() {
-        let avatarImageURL = localManager.saveImage(image: avatarImageView.image)
+        var avatarImageName: String?
+        if isImageSet {
+            avatarImageName = localManager.saveImage(image: avatarImageView.image)
+        }
         let isUserSaved = realmDataStore.addUser(name: nameTextField.text ?? "",
                                                  username: usernameTextField.text ?? "",
                                                  password: passwordTextField.text ?? "",
-                                                 avatarImageURL: avatarImageURL?.path)
+                                                 avatarImageURL: avatarImageName)
         if !isUserSaved {
             showAlert(alertText: "Something went wrong", alertMessage: "This user is already signed up") { [weak self] in
                 self?.navigationController?.popViewController(animated: true)

@@ -9,16 +9,21 @@ import UIKit
 
 class LocalManager {
 
-    func saveImage(image: UIImage?) -> URL? {
-        guard let directory = try? FileManager.default.url(for: .documentDirectory,
-                                                              in: .userDomainMask,
-                                                              appropriateFor: nil,
-                                                              create: false) as NSURL,
+    private var directory: NSURL? {
+        return try? FileManager.default.url(for: .documentDirectory,
+                                            in: .userDomainMask,
+                                            appropriateFor: nil,
+                                            create: false) as NSURL
+    }
+
+    func saveImage(image: UIImage?) -> String? {
+        guard let directory = directory,
               let data = image?.jpegData(compressionQuality: 1) else { return nil }
         do {
-            if let uploadPath = directory.appendingPathComponent("\(UUID().uuidString)") {
+            let imageName = UUID().uuidString
+            if let uploadPath = directory.appendingPathComponent("\(imageName)") {
                 try data.write(to: uploadPath)
-                return uploadPath
+                return imageName
             }
             return nil
         } catch {
@@ -27,10 +32,18 @@ class LocalManager {
         }
     }
 
-    func getSavedImage(urlString: String?) -> UIImage? {
-        guard let urlString = urlString else {
+    func getSavedImage(imageName: String?) -> UIImage? {
+        guard let imageName = imageName,
+              let url = directory?.appendingPathComponent("\(imageName)") else {
             return nil
         }
-        return UIImage(contentsOfFile: urlString)
+
+        do {
+            let imageData = try Data(contentsOf: url)
+            return UIImage(data: imageData)
+        } catch {
+            print("Error loading image : \(error)")
+        }
+        return nil
     }
 }

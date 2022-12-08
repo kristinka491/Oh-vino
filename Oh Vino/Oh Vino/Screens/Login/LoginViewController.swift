@@ -38,7 +38,7 @@ class LoginViewController: SetUpKeyboardViewController {
                 userDefaults.set(isButtonActive, forKey: UserDefaultsKeys.isUserRemembered)
                 userDefaults.set(true, forKey: UserDefaultsKeys.isUserLoggedIn)
                 userDefaults.set(usernameTextField.text, forKey: UserDefaultsKeys.currentUserLogin)
-                let controller = viewController(storyboardName: "HomeScreen", identifier: "HomeScreen", isNavigation: false)
+                let controller = viewController(storyboardName: "TabBarScreen", identifier: "TabBarScreen", isNavigation: false)
                 navigationController?.pushViewController(controller, animated: true)
             } else {
                 showAlert(alertText: "Please try again", alertMessage: "Wrong username or password", completion: nil)

@@ -13,12 +13,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        window = UIWindow(frame: UIScreen.main.bounds)
-        let storyboard = UIStoryboard(name: "GreetingScreen", bundle: nil)
-        let startVC = storyboard.instantiateViewController(withIdentifier: "GreetingScreen")
-        window?.rootViewController = UINavigationController(rootViewController: startVC)
-        window?.makeKeyAndVisible()
+        setUpStartScreen()
         return true
+    }
+
+    private func showScreen(with storyboardName: String, viewControllerName: String) {
+        let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: viewControllerName)
+
+        let navigationController = UINavigationController(rootViewController: viewController)
+
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+    }
+
+    private func setUpStartScreen() {
+        if UserDefaults.standard.bool(forKey: UserDefaultsKeys.isUserOnboarded) {
+            if UserDefaults.standard.bool(forKey: UserDefaultsKeys.isUserRemembered),
+               UserDefaults.standard.bool(forKey: UserDefaultsKeys.isUserLoggedIn) {
+                self.showScreen(with: "TabBarScreen", viewControllerName: "TabBarScreen")
+            } else {
+                self.showScreen(with: "LoginScreen", viewControllerName: "LoginScreen")
+            }
+        } else {
+            self.showScreen(with: "GreetingScreen", viewControllerName: "GreetingScreen")
+        }
     }
 }
 
