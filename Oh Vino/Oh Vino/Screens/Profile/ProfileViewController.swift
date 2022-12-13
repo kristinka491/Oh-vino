@@ -9,10 +9,6 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
-    @IBOutlet weak var profileView: UIView!
-    @IBOutlet weak var editProfileButton: UIButton!
-    @IBOutlet weak var logOutButton: UIButton!
-    @IBOutlet weak var deleteProfileButton: UIButton!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var avatarImageView: UIImageView!
@@ -23,15 +19,21 @@ class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpViews()
-        setUpButtons()
         setUpAvatarImage()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isHidden = true
+        view.layoutIfNeeded()
         getCurrentUser()
     }
 
     @IBAction func tappedEditProfileButton(_ sender: UIButton) {
-        let controller = viewController(storyboardName: "EditProfileScreen", identifier: "EditProfileScreen", isNavigation: false)
-        navigationController?.pushViewController(controller, animated: true)
+        if let controller = viewController(storyboardName: "EditProfileScreen", identifier: "EditProfileScreen", isNavigation: false) as? EditProfileViewController {
+            controller.setUp(with: user)
+            navigationController?.pushViewController(controller, animated: true)
+        }
     }
 
     @IBAction func tappedLogOutButton(_ sender: UIButton) {
@@ -40,17 +42,15 @@ class ProfileViewController: UIViewController {
     }
 
     @IBAction func tappedDeleteAccountButton(_ sender: UIButton) {
-
+        if let login = user?.username {
+            realmDataStore.deleteUser(with: login)
+        }
+        moveToLoginScreen()
     }
 
-    private func setUpViews() {
-        profileView.layer.cornerRadius = 50
-    }
-
-    private func setUpButtons() {
-        editProfileButton.layer.cornerRadius = 10
-        logOutButton.layer.cornerRadius = 10
-        deleteProfileButton.layer.cornerRadius = 10
+    @IBAction func tappedChangePasswordButton(_ sender: UIButton) {
+        let controller = viewController(storyboardName: "ChangePasswordScreen", identifier: "ChangePasswordScreen", isNavigation: false)
+        navigationController?.pushViewController(controller, animated: true)
     }
 
     private func setUpAvatarImage() {

@@ -16,19 +16,15 @@ class LocalManager {
                                             create: false) as NSURL
     }
 
-    func saveImage(image: UIImage?) -> String? {
+    func saveImage(image: UIImage?, imageName: String) {
         guard let directory = directory,
-              let data = image?.jpegData(compressionQuality: 1) else { return nil }
+              let data = image?.jpegData(compressionQuality: 1) else { return }
         do {
-            let imageName = UUID().uuidString
             if let uploadPath = directory.appendingPathComponent("\(imageName)") {
                 try data.write(to: uploadPath)
-                return imageName
             }
-            return nil
         } catch {
             print(error.localizedDescription)
-            return nil
         }
     }
 
@@ -45,5 +41,18 @@ class LocalManager {
             print("Error loading image : \(error)")
         }
         return nil
+    }
+
+    func deleteImage(imageName: String?) {
+        guard let imageName = imageName,
+              let uploadPath = directory?.appendingPathComponent("\(imageName)") else {
+            return
+        }
+
+        do {
+            try FileManager.default.removeItem(atPath: uploadPath.path)
+        } catch  {
+            print("Could not delete file, probably read-only filesystem")
+        }
     }
 }

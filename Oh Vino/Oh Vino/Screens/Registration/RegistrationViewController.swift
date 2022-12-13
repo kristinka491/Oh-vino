@@ -34,9 +34,6 @@ class RegistrationViewController: SetUpKeyboardViewController {
     @IBAction func tappedCreateAccountButton(_ sender: UIButton) {
         if !nameTextField.text.isEmptyOrNil && !usernameTextField.text.isEmptyOrNil && !passwordTextField.text.isEmptyOrNil {
             registerUser()
-            showAlert(alertText: "Thank you!", alertMessage: "Account was created.") { [weak self] in
-                self?.navigationController?.popViewController(animated: true)
-            }
         } else {
             showAlert(alertText: "Error", alertMessage: "Please fill in all the forms", completion: nil)
         }
@@ -87,16 +84,21 @@ class RegistrationViewController: SetUpKeyboardViewController {
     private func registerUser() {
         var avatarImageName: String?
         if isImageSet {
-            avatarImageName = localManager.saveImage(image: avatarImageView.image)
+            avatarImageName = UUID().uuidString
+            localManager.saveImage(image: avatarImageView.image,
+                                   imageName: avatarImageName ?? "")
         }
-        let isUserSaved = realmDataStore.addUser(name: nameTextField.text ?? "",
-                                                 username: usernameTextField.text ?? "",
-                                                 password: passwordTextField.text ?? "",
-                                                 avatarImageURL: avatarImageName)
-        if !isUserSaved {
-            showAlert(alertText: "Something went wrong", alertMessage: "This user is already signed up") { [weak self] in
+        let result = realmDataStore.addUser(name: nameTextField.text ?? "",
+                               username: usernameTextField.text ?? "",
+                               password: passwordTextField.text ?? "",
+                               avatarImageURL: avatarImageName)
+        switch result {
+        case .success(_):
+            showAlert(alertText: "Thank you!", alertMessage: "Account was created.") { [weak self] in
                 self?.navigationController?.popViewController(animated: true)
             }
+        case .failure(let error):
+            showAlert(alertText: error.title, alertMessage: error.message, completion: nil)
         }
     }
 }

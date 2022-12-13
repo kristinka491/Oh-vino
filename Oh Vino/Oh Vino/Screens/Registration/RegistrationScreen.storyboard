@@ -53,6 +53,9 @@
                                         <rect key="frame" x="20" y="245" width="374" height="24.5"/>
                                         <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" smartInsertDeleteType="yes" textContentType="username"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="y0G-dc-cMN"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="vxh-SW-rtC">
                                         <rect key="frame" x="20" y="294.5" width="338" height="31"/>

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2D45E4E1C9973D63D63E88C3 /* Pods_Oh_Vino.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64F727740CF6AD72D301A905 /* Pods_Oh_Vino.framework */; };
+		8E32BE3F2948913300AA814E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E32BE3E2948913300AA814E /* UIColor+Extension.swift */; };
+		8E32BE422948A5E400AA814E /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E32BE412948A5E400AA814E /* ChangePasswordViewController.swift */; };
+		8E32BE442948A5F800AA814E /* ChangePasswordScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E32BE432948A5F800AA814E /* ChangePasswordScreen.storyboard */; };
 		8E484B632940AB60002FD4F4 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E484B622940AB60002FD4F4 /* FavoritesViewController.swift */; };
 		8E484B652940AB75002FD4F4 /* FavoritesScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E484B642940AB75002FD4F4 /* FavoritesScreen.storyboard */; };
 		8E484B672940AB8A002FD4F4 /* PairingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E484B662940AB8A002FD4F4 /* PairingViewController.swift */; };
@@ -20,6 +23,7 @@
 		8E484B782940AE8E002FD4F4 /* TabBarScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E484B772940AE8E002FD4F4 /* TabBarScreen.storyboard */; };
 		8E484B7B2941E3C9002FD4F4 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E484B7A2941E3C9002FD4F4 /* EditProfileViewController.swift */; };
 		8E484B7D2941E3DE002FD4F4 /* EditProfileScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E484B7C2941E3DE002FD4F4 /* EditProfileScreen.storyboard */; };
+		8E484B7F29433C95002FD4F4 /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E484B7E29433C94002FD4F4 /* DataError.swift */; };
 		8EA5B5DA293DFF7800F0AB09 /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B5D9293DFF7800F0AB09 /* GreetingViewController.swift */; };
 		8EA5B5E3293E01AD00F0AB09 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B5E2293E01AD00F0AB09 /* WelcomeView.swift */; };
 		8EA5B5E5293E01F600F0AB09 /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B5E4293E01F600F0AB09 /* DescriptionView.swift */; };
@@ -54,6 +58,9 @@
 		305197AB90A5F1F4242F381A /* Pods-Oh Vino.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oh Vino.release.xcconfig"; path = "Target Support Files/Pods-Oh Vino/Pods-Oh Vino.release.xcconfig"; sourceTree = "<group>"; };
 		57CF0C9F0B6A31BD99221D3F /* Pods-Oh Vino.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oh Vino.debug.xcconfig"; path = "Target Support Files/Pods-Oh Vino/Pods-Oh Vino.debug.xcconfig"; sourceTree = "<group>"; };
 		64F727740CF6AD72D301A905 /* Pods_Oh_Vino.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Oh_Vino.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E32BE3E2948913300AA814E /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		8E32BE412948A5E400AA814E /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		8E32BE432948A5F800AA814E /* ChangePasswordScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChangePasswordScreen.storyboard; sourceTree = "<group>"; };
 		8E484B622940AB60002FD4F4 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		8E484B642940AB75002FD4F4 /* FavoritesScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavoritesScreen.storyboard; sourceTree = "<group>"; };
 		8E484B662940AB8A002FD4F4 /* PairingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +73,7 @@
 		8E484B772940AE8E002FD4F4 /* TabBarScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarScreen.storyboard; sourceTree = "<group>"; };
 		8E484B7A2941E3C9002FD4F4 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		8E484B7C2941E3DE002FD4F4 /* EditProfileScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditProfileScreen.storyboard; sourceTree = "<group>"; };
+		8E484B7E29433C94002FD4F4 /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
 		8EA5B5D9293DFF7800F0AB09 /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
 		8EA5B5E2293E01AD00F0AB09 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		8EA5B5E4293E01F600F0AB09 /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
@@ -126,6 +134,15 @@
 				64F727740CF6AD72D301A905 /* Pods_Oh_Vino.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E32BE402948A5B900AA814E /* Change password */ = {
+			isa = PBXGroup;
+			children = (
+				8E32BE412948A5E400AA814E /* ChangePasswordViewController.swift */,
+				8E32BE432948A5F800AA814E /* ChangePasswordScreen.storyboard */,
+			);
+			path = "Change password";
 			sourceTree = "<group>";
 		};
 		8E484B5F2940AB25002FD4F4 /* Favorites */ = {
@@ -272,6 +289,7 @@
 				8EA5B5F7293E1C7900F0AB09 /* UINavigation+ViewControllerExtension.swift */,
 				8EA5B609293F6F8800F0AB09 /* StringOptional+Extension.swift */,
 				8EA5B60B293F6FC600F0AB09 /* AlertViewController+Extension.swift */,
+				8E32BE3E2948913300AA814E /* UIColor+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -314,6 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				8EA5B61B293F85A800F0AB09 /* UserDefaultsKeys.swift */,
+				8E484B7E29433C94002FD4F4 /* DataError.swift */,
 			);
 			path = Type;
 			sourceTree = "<group>";
@@ -345,7 +364,6 @@
 				8EA5B5FD293E7B2500F0AB09 /* Base */,
 				8EA5B606293F41AF00F0AB09 /* Manager */,
 				8EF132B42938E0A4001C3A65 /* Screens */,
-				8E484B792941E3A6002FD4F4 /* Edit profile */,
 				8EF132B52938E0DC001C3A65 /* App */,
 				8EF132A22938DF52001C3A65 /* SceneDelegate.swift */,
 			);
@@ -364,6 +382,8 @@
 				8E484B5F2940AB25002FD4F4 /* Favorites */,
 				8E484B602940AB31002FD4F4 /* Pairing */,
 				8E484B612940AB40002FD4F4 /* Profile */,
+				8E484B792941E3A6002FD4F4 /* Edit profile */,
+				8E32BE402948A5B900AA814E /* Change password */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -466,6 +486,7 @@
 				8EA5B5ED293E023B00F0AB09 /* GetStartedView.xib in Resources */,
 				8E484B782940AE8E002FD4F4 /* TabBarScreen.storyboard in Resources */,
 				8EA5B601293E7E0E00F0AB09 /* RegistrationScreen.storyboard in Resources */,
+				8E32BE442948A5F800AA814E /* ChangePasswordScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +542,7 @@
 				8EA5B5FC293E7AC800F0AB09 /* SetUpKeyboardViewController.swift in Sources */,
 				8EF132A52938DF52001C3A65 /* LoginViewController.swift in Sources */,
 				8EA5B61E293F87C900F0AB09 /* HomeViewController.swift in Sources */,
+				8E32BE3F2948913300AA814E /* UIColor+Extension.swift in Sources */,
 				8EA5B5F6293E034B00F0AB09 /* UIView+Extension.swift in Sources */,
 				8EA5B619293F802100F0AB09 /* LocalManager.swift in Sources */,
 				8EA5B61C293F85A800F0AB09 /* UserDefaultsKeys.swift in Sources */,
@@ -530,6 +552,7 @@
 				8EA5B5F8293E1C7900F0AB09 /* UINavigation+ViewControllerExtension.swift in Sources */,
 				8EA5B612293F757400F0AB09 /* User.swift in Sources */,
 				8EA5B610293F756700F0AB09 /* RealmDataStore.swift in Sources */,
+				8E32BE422948A5E400AA814E /* ChangePasswordViewController.swift in Sources */,
 				8EA5B60A293F6F8800F0AB09 /* StringOptional+Extension.swift in Sources */,
 				8EA5B5E7293E020800F0AB09 /* GetStartedView.swift in Sources */,
 				8E484B672940AB8A002FD4F4 /* PairingViewController.swift in Sources */,
@@ -542,6 +565,7 @@
 				8E484B632940AB60002FD4F4 /* FavoritesViewController.swift in Sources */,
 				8E484B6F2940AC2F002FD4F4 /* VineInfoViewController.swift in Sources */,
 				8E484B7B2941E3C9002FD4F4 /* EditProfileViewController.swift in Sources */,
+				8E484B7F29433C95002FD4F4 /* DataError.swift in Sources */,
 				8EA5B5E5293E01F600F0AB09 /* DescriptionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

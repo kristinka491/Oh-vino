@@ -33,15 +33,15 @@ class LoginViewController: SetUpKeyboardViewController {
     }
 
     @IBAction func tappedSignInButton(_ sender: UIButton) {
-        if !usernameTextField.text.isEmptyOrNil && !passwordTextField.text.isEmptyOrNil {
-            if realmDataStore.getUser(username: usernameTextField.text ?? "", password: passwordTextField.text ?? "") != nil {
-                userDefaults.set(isButtonActive, forKey: UserDefaultsKeys.isUserRemembered)
-                userDefaults.set(true, forKey: UserDefaultsKeys.isUserLoggedIn)
-                userDefaults.set(usernameTextField.text, forKey: UserDefaultsKeys.currentUserLogin)
-                let controller = viewController(storyboardName: "TabBarScreen", identifier: "TabBarScreen", isNavigation: false)
-                navigationController?.pushViewController(controller, animated: true)
-            } else {
-                showAlert(alertText: "Please try again", alertMessage: "Wrong username or password", completion: nil)
+        if let userName = usernameTextField.text,
+           let password = passwordTextField.text {
+            let result = realmDataStore.loginUser(username: userName, password: password)
+            switch result {
+            case .success(_):
+                saveToUserDefaults(username: userName)
+                moveToHomeScreen()
+            case .failure(let error):
+                showAlert(alertText: error.title, alertMessage: error.message, completion: nil)
             }
         } else {
             showAlert(alertText: "Error", alertMessage: "Please enter username and password", completion: nil)
@@ -51,6 +51,17 @@ class LoginViewController: SetUpKeyboardViewController {
     @IBAction func tappedHidePasswordButton(_ sender: UIButton) {
         passwordTextField.isSecureTextEntry = !passwordTextField.isSecureTextEntry
         setPasswordToggleImage(sender)
+    }
+
+    private func saveToUserDefaults(username: String) {
+        userDefaults.set(isButtonActive, forKey: UserDefaultsKeys.isUserRemembered)
+        userDefaults.set(true, forKey: UserDefaultsKeys.isUserLoggedIn)
+        userDefaults.set(username, forKey: UserDefaultsKeys.currentUserLogin)
+    }
+
+    private func moveToHomeScreen() {
+        let controller = viewController(storyboardName: "TabBarScreen", identifier: "TabBarScreen", isNavigation: false)
+        navigationController?.pushViewController(controller, animated: true)
     }
 
     private func setPasswordToggleImage(_ button: UIButton) {
