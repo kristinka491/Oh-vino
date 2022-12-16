@@ -82,6 +82,39 @@ class RealmDataStore {
         return .failure(.theSamePassword)
     }
 
+    func addUserFavorites(model: WineModel) -> Bool {
+        if let currentUserLogin = UserDefaults.standard.string(forKey: UserDefaultsKeys.currentUserLogin),
+            let currentUser = realm?.object(ofType: User.self,
+                                          forPrimaryKey: currentUserLogin) {
+            let userFavorites = UserFavorites()
+
+            try? realm?.write {
+                userFavorites.wine = model.wine ?? ""
+                userFavorites.winery = model.winery ?? ""
+                userFavorites.wineImageURL = model.image ?? ""
+
+                currentUser.favorites.append(userFavorites)
+            }
+            return true
+        }
+        return false
+    }
+
+    func deleteFromFavorites(with wine: String) {
+        if let userFavorite = realm?.object(ofType: UserFavorites.self,
+                                            forPrimaryKey: wine) {
+
+            try? realm?.write {
+                realm?.delete(userFavorite)
+            }
+        }
+    }
+
+    func isWineFavorite(wine: String) -> Bool {
+        return realm?.object(ofType: UserFavorites.self,
+                             forPrimaryKey: wine) != nil
+    }
+
     private func getCurrentUser() -> User? {
         if let currentUserLogin = UserDefaults.standard.string(forKey: UserDefaultsKeys.currentUserLogin) {
             return getUser(with: currentUserLogin)

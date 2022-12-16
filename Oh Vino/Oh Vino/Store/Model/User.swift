@@ -12,4 +12,6 @@ class User: Object {
     @Persisted var name = ""
     @Persisted var password = ""
     @Persisted var avatarImageURL: String?
+
+    @Persisted var favorites: List<UserFavorites>
 }
