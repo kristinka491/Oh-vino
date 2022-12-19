@@ -9,6 +9,9 @@ import UIKit
 
 protocol AddToFavoritesDelegate: AnyObject {
     func addToFavorites(model: WineModel?) -> Bool
+}
+
+protocol DeleteFromFavoritesDelegate: AnyObject {
     func deleteFromFavorites(wine: String?)
 }
 
@@ -21,7 +24,8 @@ class WineCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var wineryNameLabel: UILabel!
     @IBOutlet weak var likeButton: UIButton!
 
-    private weak var delegate: AddToFavoritesDelegate?
+    private weak var addDelegate: AddToFavoritesDelegate?
+    private weak var deleteDelegate: DeleteFromFavoritesDelegate?
     private var wineModel: WineModel?
 
     override func awakeFromNib() {
@@ -31,10 +35,10 @@ class WineCollectionViewCell: UICollectionViewCell {
 
     @IBAction func tappedLikeButton(_ sender: UIButton) {
         if wineModel?.isFavorite ?? true {
-            delegate?.deleteFromFavorites(wine: wineModel?.wine)
+            deleteDelegate?.deleteFromFavorites(wine: wineModel?.wine)
             wineModel?.isFavorite = false
         } else {
-            if delegate?.addToFavorites(model: wineModel) ?? false {
+            if addDelegate?.addToFavorites(model: wineModel) ?? false {
                 wineModel?.isFavorite = true
             }
         }
@@ -51,13 +55,14 @@ class WineCollectionViewCell: UICollectionViewCell {
         backgroundsView.layer.cornerRadius = 20
     }
 
-    func setUpCell(_ model: WineModel, delegate: AddToFavoritesDelegate) {
+    func setUpCell(_ model: WineModel, addDelegate: AddToFavoritesDelegate? = nil, deleteDelegate: DeleteFromFavoritesDelegate? = nil) {
         wineModel = model
-        self.delegate = delegate
+        self.addDelegate = addDelegate
+        self.deleteDelegate = deleteDelegate
 
         wineNameLabel.text = model.wine
         wineryNameLabel.text = model.winery
-        wineImageView.image = UIImage(url: URL(string: model.image ?? ""))
+        wineImageView.image = UIImage(url: URL(string: model.wineImageURL ?? ""))
         updateButtonImage(with: model.isFavorite)
     }
 }

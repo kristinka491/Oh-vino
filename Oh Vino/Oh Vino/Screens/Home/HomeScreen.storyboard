@@ -17,19 +17,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Yo-5k-zg3">
-                                <rect key="frame" x="20" y="64" width="374" height="31"/>
-                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="27"/>
+                                <rect key="frame" x="20" y="64" width="374" height="34.5"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="30"/>
                                 <color key="textColor" red="0.61039102079999996" green="0.1183081344" blue="0.38627750979999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What would you like?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jmv-Ec-dfs">
-                                <rect key="frame" x="20" y="115" width="374" height="25"/>
-                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="22"/>
+                                <rect key="frame" x="20" y="118.5" width="374" height="24"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="21"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="YGN-ji-E8n">
-                                <rect key="frame" x="0.0" y="160" width="414" height="51"/>
+                                <rect key="frame" x="0.0" y="162.5" width="414" height="51"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -43,7 +43,7 @@
                                 </connections>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GS4-kx-V1s">
-                                <rect key="frame" x="10" y="301" width="394" height="492"/>
+                                <rect key="frame" x="10" y="303.5" width="394" height="489.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uXO-kK-9a9">
                                     <size key="itemSize" width="128" height="128"/>
@@ -54,7 +54,7 @@
                                 <cells/>
                             </collectionView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ciI-lR-MQn">
-                                <rect key="frame" x="0.0" y="231" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="233.5" width="414" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="aC1-Ju-4bO"/>
                                 </constraints>

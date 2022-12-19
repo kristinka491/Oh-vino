@@ -54,12 +54,13 @@ class EditProfileViewController: SetUpKeyboardViewController {
         imagePickerManager.showActionSheet(vc: self) { [weak self] image, _ in
             self?.avatarImageView.image = image
             self?.isImageSet = true
+            self?.setUpButtonActivity()
         }
     }
 
     private var isChangedData: Bool {
         if let user = user {
-            return user.name != nameTextField.text
+            return user.name != nameTextField.text || isImageSet
             }
         return true
     }
@@ -71,7 +72,7 @@ class EditProfileViewController: SetUpKeyboardViewController {
     private func setUpButtonActivity() {
         let isEnable = !nameTextField.text.isEmptyOrNil && isChangedData
         let customColor = UIColor(rgb: 0x9C1E68)
-        saveChangesButton.isUserInteractionEnabled = isEnable
+        saveChangesButton.isEnabled = isEnable
         saveChangesButton.setTitleColor(customColor, for: .normal)
         saveChangesButton.setTitleColor(.gray, for: .disabled)
     }

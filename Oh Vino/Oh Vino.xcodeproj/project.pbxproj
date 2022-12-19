@@ -33,13 +33,12 @@
 		8E484B692940AB9D002FD4F4 /* PairingScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E484B682940AB9D002FD4F4 /* PairingScreen.storyboard */; };
 		8E484B6B2940ABB0002FD4F4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E484B6A2940ABB0002FD4F4 /* ProfileViewController.swift */; };
 		8E484B6D2940ABBF002FD4F4 /* ProfileScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E484B6C2940ABBF002FD4F4 /* ProfileScreen.storyboard */; };
-		8E484B6F2940AC2F002FD4F4 /* VineInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E484B6E2940AC2F002FD4F4 /* VineInfoViewController.swift */; };
-		8E484B712940AC42002FD4F4 /* VineInfoScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E484B702940AC42002FD4F4 /* VineInfoScreen.storyboard */; };
 		8E484B762940AE75002FD4F4 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E484B752940AE75002FD4F4 /* TabBarViewController.swift */; };
 		8E484B782940AE8E002FD4F4 /* TabBarScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E484B772940AE8E002FD4F4 /* TabBarScreen.storyboard */; };
 		8E484B7B2941E3C9002FD4F4 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E484B7A2941E3C9002FD4F4 /* EditProfileViewController.swift */; };
 		8E484B7D2941E3DE002FD4F4 /* EditProfileScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E484B7C2941E3DE002FD4F4 /* EditProfileScreen.storyboard */; };
 		8E484B7F29433C95002FD4F4 /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E484B7E29433C94002FD4F4 /* DataError.swift */; };
+		8E4B3AC729506C8900E30889 /* RealmCollection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4B3AC629506C8900E30889 /* RealmCollection+Extension.swift */; };
 		8EA5B5DA293DFF7800F0AB09 /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B5D9293DFF7800F0AB09 /* GreetingViewController.swift */; };
 		8EA5B5E3293E01AD00F0AB09 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B5E2293E01AD00F0AB09 /* WelcomeView.swift */; };
 		8EA5B5E5293E01F600F0AB09 /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B5E4293E01F600F0AB09 /* DescriptionView.swift */; };
@@ -99,13 +98,12 @@
 		8E484B682940AB9D002FD4F4 /* PairingScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PairingScreen.storyboard; sourceTree = "<group>"; };
 		8E484B6A2940ABB0002FD4F4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		8E484B6C2940ABBF002FD4F4 /* ProfileScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileScreen.storyboard; sourceTree = "<group>"; };
-		8E484B6E2940AC2F002FD4F4 /* VineInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VineInfoViewController.swift; sourceTree = "<group>"; };
-		8E484B702940AC42002FD4F4 /* VineInfoScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VineInfoScreen.storyboard; sourceTree = "<group>"; };
 		8E484B752940AE75002FD4F4 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		8E484B772940AE8E002FD4F4 /* TabBarScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarScreen.storyboard; sourceTree = "<group>"; };
 		8E484B7A2941E3C9002FD4F4 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		8E484B7C2941E3DE002FD4F4 /* EditProfileScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditProfileScreen.storyboard; sourceTree = "<group>"; };
 		8E484B7E29433C94002FD4F4 /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
+		8E4B3AC629506C8900E30889 /* RealmCollection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealmCollection+Extension.swift"; sourceTree = "<group>"; };
 		8EA5B5D9293DFF7800F0AB09 /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
 		8EA5B5E2293E01AD00F0AB09 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		8EA5B5E4293E01F600F0AB09 /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
@@ -300,15 +298,6 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		8EA5B5D7293DFADE00F0AB09 /* Vine info */ = {
-			isa = PBXGroup;
-			children = (
-				8E484B6E2940AC2F002FD4F4 /* VineInfoViewController.swift */,
-				8E484B702940AC42002FD4F4 /* VineInfoScreen.storyboard */,
-			);
-			path = "Vine info";
-			sourceTree = "<group>";
-		};
 		8EA5B5D8293DFF5000F0AB09 /* Greeting */ = {
 			isa = PBXGroup;
 			children = (
@@ -375,6 +364,7 @@
 				8E32BE3E2948913300AA814E /* UIColor+Extension.swift */,
 				8E32BE6C294A124800AA814E /* LoaderExtension+ViewContoller.swift */,
 				8E32BE6E294B274E00AA814E /* UIImage+Extension.swift */,
+				8E4B3AC629506C8900E30889 /* RealmCollection+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -464,7 +454,6 @@
 				8EA5B5D5293DFACA00F0AB09 /* Registration */,
 				8E484B722940AE15002FD4F4 /* Tabbar */,
 				8EA5B5D6293DFAD500F0AB09 /* Home */,
-				8EA5B5D7293DFADE00F0AB09 /* Vine info */,
 				8E484B5F2940AB25002FD4F4 /* Favorites */,
 				8E484B602940AB31002FD4F4 /* Pairing */,
 				8E484B612940AB40002FD4F4 /* Profile */,
@@ -572,7 +561,6 @@
 				8E484B652940AB75002FD4F4 /* FavoritesScreen.storyboard in Resources */,
 				8E32BE552949D6CF00AA814E /* WineCollectionViewCell.xib in Resources */,
 				8EA5B620293F87D800F0AB09 /* HomeScreen.storyboard in Resources */,
-				8E484B712940AC42002FD4F4 /* VineInfoScreen.storyboard in Resources */,
 				8EA5B5ED293E023B00F0AB09 /* GetStartedView.xib in Resources */,
 				8E484B782940AE8E002FD4F4 /* TabBarScreen.storyboard in Resources */,
 				8EA5B601293E7E0E00F0AB09 /* RegistrationScreen.storyboard in Resources */,
@@ -644,6 +632,7 @@
 				8E32BE71294C746600AA814E /* UserFavorites.swift in Sources */,
 				8E32BE69294A081900AA814E /* TypesOfWine.swift in Sources */,
 				8E32BE67294A055C00AA814E /* ApiError.swift in Sources */,
+				8E4B3AC729506C8900E30889 /* RealmCollection+Extension.swift in Sources */,
 				8EA5B61C293F85A800F0AB09 /* UserDefaultsKeys.swift in Sources */,
 				8E484B6B2940ABB0002FD4F4 /* ProfileViewController.swift in Sources */,
 				8E32BE65294A053400AA814E /* LResponse.swift in Sources */,
@@ -666,7 +655,6 @@
 				8EA5B5E3293E01AD00F0AB09 /* WelcomeView.swift in Sources */,
 				8EA5B605293F41A300F0AB09 /* ImagePickerManager.swift in Sources */,
 				8E484B632940AB60002FD4F4 /* FavoritesViewController.swift in Sources */,
-				8E484B6F2940AC2F002FD4F4 /* VineInfoViewController.swift in Sources */,
 				8E32BE61294A049600AA814E /* NetworkManagerHelper.swift in Sources */,
 				8E484B7B2941E3C9002FD4F4 /* EditProfileViewController.swift in Sources */,
 				8E484B7F29433C95002FD4F4 /* DataError.swift in Sources */,

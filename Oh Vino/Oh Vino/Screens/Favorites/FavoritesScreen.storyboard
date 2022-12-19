@@ -16,21 +16,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="htj-Hg-4Td">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your favorite wines will be displayed here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BpR-0a-4Sa">
+                                <rect key="frame" x="10" y="100" width="394" height="694.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="23"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite wines" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVF-7N-cjK">
+                                <rect key="frame" x="20" y="64" width="374" height="34.5"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="30"/>
+                                <color key="textColor" red="0.61039102079999996" green="0.1183081344" blue="0.40760161560000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Nvy-Vr-5YG">
+                                <rect key="frame" x="10" y="108.5" width="394" height="694.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Weu-ig-Qz3">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="htj-Hg-4Td" secondAttribute="bottom" id="8yA-fA-R4d"/>
-                            <constraint firstItem="htj-Hg-4Td" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ahK-EW-I1f"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="htj-Hg-4Td" secondAttribute="trailing" id="rDA-Sz-Vvj"/>
-                            <constraint firstItem="htj-Hg-4Td" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="ypT-MB-PKs"/>
+                            <constraint firstItem="aVF-7N-cjK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="BAh-tR-CKw"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Nvy-Vr-5YG" secondAttribute="trailing" constant="10" id="Kf9-Uu-bOG"/>
+                            <constraint firstItem="Nvy-Vr-5YG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="Kwe-Qc-kXD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="aVF-7N-cjK" secondAttribute="trailing" constant="20" id="da4-3e-azj"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Nvy-Vr-5YG" secondAttribute="bottom" constant="10" id="i41-HZ-LmN"/>
+                            <constraint firstItem="aVF-7N-cjK" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="n9F-bb-nSb"/>
+                            <constraint firstItem="Nvy-Vr-5YG" firstAttribute="top" secondItem="aVF-7N-cjK" secondAttribute="bottom" constant="10" id="orl-GZ-Wj8"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Favorites" image="star" catalog="system" id="Hbw-Vy-Oee"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Nvy-Vr-5YG" id="CJR-qm-blU"/>
+                        <outlet property="emptyCollectionViewLabel" destination="BpR-0a-4Sa" id="qR1-P3-RMJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -38,7 +66,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Background" width="540" height="960"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

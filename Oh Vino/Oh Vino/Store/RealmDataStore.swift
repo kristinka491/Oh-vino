@@ -91,7 +91,7 @@ class RealmDataStore {
             try? realm?.write {
                 userFavorites.wine = model.wine ?? ""
                 userFavorites.winery = model.winery ?? ""
-                userFavorites.wineImageURL = model.image ?? ""
+                userFavorites.wineImageURL = model.wineImageURL ?? ""
 
                 currentUser.favorites.append(userFavorites)
             }
@@ -115,7 +115,7 @@ class RealmDataStore {
                              forPrimaryKey: wine) != nil
     }
 
-    private func getCurrentUser() -> User? {
+    func getCurrentUser() -> User? {
         if let currentUserLogin = UserDefaults.standard.string(forKey: UserDefaultsKeys.currentUserLogin) {
             return getUser(with: currentUserLogin)
         }

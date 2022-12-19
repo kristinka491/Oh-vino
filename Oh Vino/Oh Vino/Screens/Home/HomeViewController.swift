@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Alamofire
+import RealmSwift
 
 class HomeViewController: UIViewController {
 
@@ -42,29 +42,40 @@ class HomeViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+
+        refreshFavorites()
         navigationController?.navigationBar.isHidden = true
         view.layoutIfNeeded()
+    }
+
+    private func refreshFavorites() {
+        updateModel(model: filteredData)
+        updateModel(model: wines)
+        wineCollectionView.reloadData()
     }
 
     private func loadData(typeOfWine: TypeOfWineEnum) {
         let alertVC = showLoader()
         networkManager.wines(typeOfWine: typeOfWine) { [weak self] model, _ in
             self?.dismissLoader(alert: alertVC)
-            model?.forEach { [weak self] wineModel in
-                wineModel.isFavorite = self?.realmDataStore.isWineFavorite(wine: wineModel.wine ?? "") ?? false
-            }
+            self?.updateModel(model: model)
             self?.wines = model ?? []
             self?.filteredData = model ?? []
 
+            self?.wineCollectionView.setContentOffset(.zero, animated: true)
             self?.wineCollectionView.reloadData()
         }
     }
 
-    private func getCurrentUser() {
-        if let currentUserLogin = UserDefaults.standard.string(forKey: UserDefaultsKeys.currentUserLogin) {
-            user = realmDataStore.getUser(with: currentUserLogin)
-            setUpLabel()
+    private func updateModel(model: [WineModel]?) {
+        model?.forEach { [weak self] wineModel in
+            wineModel.isFavorite = self?.realmDataStore.isWineFavorite(wine: wineModel.wine ?? "") ?? false
         }
+    }
+
+    private func getCurrentUser() {
+        user = realmDataStore.getCurrentUser()
+        setUpLabel()
     }
 
     private func setUpLabel() {
@@ -125,7 +136,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return UICollectionViewCell()
         case wineCollectionView:
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "wineCell", for: indexPath) as? WineCollectionViewCell {
-                cell.setUpCell(filteredData[indexPath.row], delegate: self)
+                cell.setUpCell(filteredData[indexPath.row], addDelegate: self, deleteDelegate: self)
                 return cell
             }
             return UICollectionViewCell()
@@ -160,6 +171,14 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             break
         default:
             break
+        }
+    }
+
+    private func updateArray(array: [WineModel], currentWine: String, isFavorite: Bool = true) {
+        array.forEach { wineModel in
+            if wineModel.wine == currentWine {
+                wineModel.isFavorite = isFavorite
+            }
         }
     }
 }
@@ -198,20 +217,6 @@ extension HomeViewController: AddToFavoritesDelegate {
         }
         return false
     }
-    
-    func deleteFromFavorites(wine: String?) {
-        realmDataStore.deleteFromFavorites(with: wine ?? "")
-        updateArray(array: wines, currentWine: wine ?? "", isFavorite: false)
-        updateArray(array: filteredData, currentWine: wine ?? "", isFavorite: false)
-    }
-
-    private func updateArray(array: [WineModel], currentWine: String, isFavorite: Bool = true) {
-        array.forEach { wineModel in
-            if wineModel.wine == currentWine {
-                wineModel.isFavorite = isFavorite
-            }
-        }
-    }
 
     private func addUserFavorites(model: WineModel) {
         let isUserFavoriteSaved = realmDataStore.addUserFavorites(model: model)
@@ -228,4 +233,17 @@ extension HomeViewController: AddToFavoritesDelegate {
             self?.view.window?.makeKeyAndVisible()
         }
     }
+}
+
+// MARK: -
+// MARK: - DeleteFromFavoritesDelegate
+
+extension HomeViewController: DeleteFromFavoritesDelegate {
+
+    func deleteFromFavorites(wine: String?) {
+        realmDataStore.deleteFromFavorites(with: wine ?? "")
+        updateArray(array: wines, currentWine: wine ?? "", isFavorite: false)
+        updateArray(array: filteredData, currentWine: wine ?? "", isFavorite: false)
+    }
+
 }

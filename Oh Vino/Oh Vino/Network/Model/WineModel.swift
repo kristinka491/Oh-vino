@@ -10,17 +10,24 @@ import UIKit
 class WineModel: Codable {
     var winery: String?
     var wine: String?
-    var image: String?
+    var wineImageURL: String?
     var isFavorite = false
 
+    init(model: UserFavorites) {
+        self.wine = model.wine
+        self.wineImageURL = model.wineImageURL
+        self.winery = model.winery
+        self.isFavorite = true
+    }
+
     private enum CodingKeys: String, CodingKey {
-        case winery, wine, image
+        case winery, wine, wineImageURL = "image"
     }
 
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         winery = try container.decodeIfPresent(String.self, forKey: .winery)
         wine = try container.decodeIfPresent(String.self, forKey: .wine)
-        image = try container.decodeIfPresent(String.self, forKey: .image)
+        wineImageURL = try container.decodeIfPresent(String.self, forKey: .wineImageURL)
     }
 }
