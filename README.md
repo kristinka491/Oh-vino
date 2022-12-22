@@ -1,5 +1,5 @@
 # Oh Vino
-> Oh Vino is an IOS app provides a huge collection ov different types of wines.
+> Oh Vino is an IOS app provides a huge collection of different types of wines.
 
 
 ## Table of Contents
