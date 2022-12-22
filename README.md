@@ -1,5 +1,5 @@
 # Oh Vino
-> Oh Vino is an IOS app.
+> Oh Vino is an IOS app provides a huge collection ov different types of wines.
 
 
 ## Table of Contents
@@ -19,7 +19,7 @@ For installation of all third-party libraries just type in console pod install. 
 
 
 ## Project Status
-Project is: in process.
+Project is: finished.
 
 
 <!-- Optional -->
