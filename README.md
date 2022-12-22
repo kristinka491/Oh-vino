@@ -11,7 +11,8 @@
 
 ## Technologies Used
 - Swift - version 5.5
-- 
+- Moya - version 15.0
+- Realm - version 12.11.00
 
 
 ## Setup
