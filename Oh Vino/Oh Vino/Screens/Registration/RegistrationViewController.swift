@@ -31,7 +31,7 @@ class RegistrationViewController: SetUpKeyboardViewController {
         currentTextField = passwordTextField
     }
 
-    @IBAction func tappedCreateAccountButton(_ sender: UIButton) {
+    @IBAction private func tappedCreateAccountButton(_ sender: UIButton) {
         if !nameTextField.text.isEmptyOrNil && !usernameTextField.text.isEmptyOrNil && !passwordTextField.text.isEmptyOrNil {
             registerUser()
         } else {
@@ -39,11 +39,11 @@ class RegistrationViewController: SetUpKeyboardViewController {
         }
     }
 
-    @IBAction func tappedSignInButton(_ sender: UIButton) {
+    @IBAction private func tappedSignInButton(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
 
-    @IBAction func tappedHidePasswordButton(_ sender: UIButton) {
+    @IBAction private func tappedHidePasswordButton(_ sender: UIButton) {
         passwordTextField.isSecureTextEntry = !passwordTextField.isSecureTextEntry
         setPasswordToggleImage(sender)
     }

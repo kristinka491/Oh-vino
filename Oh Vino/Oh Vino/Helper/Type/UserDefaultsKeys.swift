@@ -13,4 +13,3 @@ struct UserDefaultsKeys {
     static let currentUserLogin = "currentUserLogin"
     static let isUserOnboarded = "isUserOnboarded"
 }
-

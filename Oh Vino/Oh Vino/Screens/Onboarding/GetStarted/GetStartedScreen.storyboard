@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Get Started View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="GetStartedScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="GetStartedViewController" customModule="Oh_Vino" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greetingBackground" translatesAutoresizingMaskIntoConstraints="NO" id="h1f-Zh-mCS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QzM-g4-KLc">
+                                <rect key="frame" x="0.0" y="537.5" width="414" height="358.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share a moment!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1L-7T-iyF">
+                                        <rect key="frame" x="20" y="30" width="374" height="34.5"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="30"/>
+                                        <color key="textColor" red="0.61039102079999996" green="0.1183081344" blue="0.40760161560000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enjoy this fantastic world of different wines with us. Let's become a sommelier." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7B-vF-gkn">
+                                        <rect key="frame" x="20" y="120.5" width="374" height="45.5"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgs-gC-WHi">
+                                        <rect key="frame" x="20" y="196" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.61039102079999996" green="0.1183081344" blue="0.40760161560000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="OxS-a1-O8a"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="GET STARTED"/>
+                                        <connections>
+                                            <action selector="tappedGetStartedButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="M6H-67-SpH"/>
+                                        </connections>
+                                    </button>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="2" translatesAutoresizingMaskIntoConstraints="NO" id="dQa-8h-ULk">
+                                        <rect key="frame" x="149" y="312.5" width="116" height="26"/>
+                                        <color key="pageIndicatorTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="currentPageIndicatorTintColor" red="0.61039102079999996" green="0.1183081344" blue="0.40760161560000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </pageControl>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="dQa-8h-ULk" firstAttribute="top" relation="greaterThanOrEqual" secondItem="wgs-gC-WHi" secondAttribute="bottom" constant="10" id="3Lj-fD-719"/>
+                                    <constraint firstItem="z7B-vF-gkn" firstAttribute="trailing" secondItem="F1L-7T-iyF" secondAttribute="trailing" id="7a2-Y6-qyj"/>
+                                    <constraint firstItem="wgs-gC-WHi" firstAttribute="leading" secondItem="F1L-7T-iyF" secondAttribute="leading" id="G07-If-bv5"/>
+                                    <constraint firstItem="F1L-7T-iyF" firstAttribute="leading" secondItem="QzM-g4-KLc" secondAttribute="leading" constant="20" id="GKh-hZ-bmf"/>
+                                    <constraint firstAttribute="trailing" secondItem="F1L-7T-iyF" secondAttribute="trailing" constant="20" id="HPB-qw-TNE"/>
+                                    <constraint firstItem="z7B-vF-gkn" firstAttribute="top" relation="greaterThanOrEqual" secondItem="F1L-7T-iyF" secondAttribute="bottom" constant="20" id="Kry-s1-Aog"/>
+                                    <constraint firstItem="F1L-7T-iyF" firstAttribute="top" secondItem="QzM-g4-KLc" secondAttribute="top" constant="30" id="RVb-80-x3m"/>
+                                    <constraint firstItem="z7B-vF-gkn" firstAttribute="centerY" secondItem="QzM-g4-KLc" secondAttribute="centerY" multiplier="0.8" id="Y47-8k-rvB"/>
+                                    <constraint firstAttribute="bottom" secondItem="dQa-8h-ULk" secondAttribute="bottom" constant="20" id="ZEs-tT-hAO"/>
+                                    <constraint firstItem="wgs-gC-WHi" firstAttribute="trailing" secondItem="F1L-7T-iyF" secondAttribute="trailing" id="ZTd-hI-ZXX"/>
+                                    <constraint firstItem="dQa-8h-ULk" firstAttribute="leading" secondItem="QzM-g4-KLc" secondAttribute="leading" constant="149" id="dXh-Nl-sy3"/>
+                                    <constraint firstAttribute="trailing" secondItem="dQa-8h-ULk" secondAttribute="trailing" constant="149" id="gee-cE-hRX"/>
+                                    <constraint firstItem="z7B-vF-gkn" firstAttribute="leading" secondItem="F1L-7T-iyF" secondAttribute="leading" id="jiA-ZR-tv0"/>
+                                    <constraint firstItem="wgs-gC-WHi" firstAttribute="top" secondItem="z7B-vF-gkn" secondAttribute="bottom" constant="30" id="pLz-Fx-nlf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QzM-g4-KLc" firstAttribute="leading" secondItem="h1f-Zh-mCS" secondAttribute="leading" id="3Oq-Ec-yF8"/>
+                            <constraint firstAttribute="bottom" secondItem="h1f-Zh-mCS" secondAttribute="bottom" id="M0W-MQ-1cC"/>
+                            <constraint firstItem="QzM-g4-KLc" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="1.6" id="UOY-Kj-aa6"/>
+                            <constraint firstItem="h1f-Zh-mCS" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="VI5-fd-dE4"/>
+                            <constraint firstItem="QzM-g4-KLc" firstAttribute="bottom" secondItem="h1f-Zh-mCS" secondAttribute="bottom" id="Xx6-eg-cnG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="h1f-Zh-mCS" secondAttribute="trailing" id="YUF-W2-u8O"/>
+                            <constraint firstItem="QzM-g4-KLc" firstAttribute="trailing" secondItem="h1f-Zh-mCS" secondAttribute="trailing" id="bt3-s8-3xq"/>
+                            <constraint firstItem="h1f-Zh-mCS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="gav-Fs-w3R"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="getStartedButton" destination="wgs-gC-WHi" id="ALX-Sf-Twk"/>
+                        <outlet property="getStartedView" destination="QzM-g4-KLc" id="oaU-xt-mZr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-25" y="27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="greetingBackground" width="573" height="576"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

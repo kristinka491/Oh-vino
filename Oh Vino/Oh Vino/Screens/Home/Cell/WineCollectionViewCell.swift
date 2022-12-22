@@ -33,7 +33,7 @@ class WineCollectionViewCell: UICollectionViewCell {
         setUpView()
     }
 
-    @IBAction func tappedLikeButton(_ sender: UIButton) {
+    @IBAction private func tappedLikeButton(_ sender: UIButton) {
         if wineModel?.isFavorite ?? true {
             deleteDelegate?.deleteFromFavorites(wine: wineModel?.wine)
             wineModel?.isFavorite = false
@@ -45,16 +45,6 @@ class WineCollectionViewCell: UICollectionViewCell {
         updateButtonImage(with: wineModel?.isFavorite ?? true)
     }
 
-    private func updateButtonImage(with isFavorite: Bool) {
-        let buttonImage = isFavorite ? UIImage(systemName: "heart.fill") : UIImage(systemName: "heart")
-        likeButton.setImage(buttonImage, for: .normal)
-    }
-
-    private func setUpView() {
-        wineView.layer.cornerRadius = 20
-        backgroundsView.layer.cornerRadius = 20
-    }
-
     func setUpCell(_ model: WineModel, addDelegate: AddToFavoritesDelegate? = nil, deleteDelegate: DeleteFromFavoritesDelegate? = nil) {
         wineModel = model
         self.addDelegate = addDelegate
@@ -64,5 +54,15 @@ class WineCollectionViewCell: UICollectionViewCell {
         wineryNameLabel.text = model.winery
         wineImageView.image = UIImage(url: URL(string: model.wineImageURL ?? ""))
         updateButtonImage(with: model.isFavorite)
+    }
+
+    private func updateButtonImage(with isFavorite: Bool) {
+        let buttonImage = isFavorite ? UIImage(systemName: "heart.fill") : UIImage(systemName: "heart")
+        likeButton.setImage(buttonImage, for: .normal)
+    }
+
+    private func setUpView() {
+        wineView.layer.cornerRadius = 20
+        backgroundsView.layer.cornerRadius = 20
     }
 }

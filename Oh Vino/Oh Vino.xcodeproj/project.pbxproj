@@ -29,8 +29,6 @@
 		8E32BE71294C746600AA814E /* UserFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E32BE70294C746500AA814E /* UserFavorites.swift */; };
 		8E484B632940AB60002FD4F4 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E484B622940AB60002FD4F4 /* FavoritesViewController.swift */; };
 		8E484B652940AB75002FD4F4 /* FavoritesScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E484B642940AB75002FD4F4 /* FavoritesScreen.storyboard */; };
-		8E484B672940AB8A002FD4F4 /* PairingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E484B662940AB8A002FD4F4 /* PairingViewController.swift */; };
-		8E484B692940AB9D002FD4F4 /* PairingScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E484B682940AB9D002FD4F4 /* PairingScreen.storyboard */; };
 		8E484B6B2940ABB0002FD4F4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E484B6A2940ABB0002FD4F4 /* ProfileViewController.swift */; };
 		8E484B6D2940ABBF002FD4F4 /* ProfileScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E484B6C2940ABBF002FD4F4 /* ProfileScreen.storyboard */; };
 		8E484B762940AE75002FD4F4 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E484B752940AE75002FD4F4 /* TabBarViewController.swift */; };
@@ -39,14 +37,13 @@
 		8E484B7D2941E3DE002FD4F4 /* EditProfileScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E484B7C2941E3DE002FD4F4 /* EditProfileScreen.storyboard */; };
 		8E484B7F29433C95002FD4F4 /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E484B7E29433C94002FD4F4 /* DataError.swift */; };
 		8E4B3AC729506C8900E30889 /* RealmCollection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4B3AC629506C8900E30889 /* RealmCollection+Extension.swift */; };
-		8EA5B5DA293DFF7800F0AB09 /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B5D9293DFF7800F0AB09 /* GreetingViewController.swift */; };
-		8EA5B5E3293E01AD00F0AB09 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B5E2293E01AD00F0AB09 /* WelcomeView.swift */; };
-		8EA5B5E5293E01F600F0AB09 /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B5E4293E01F600F0AB09 /* DescriptionView.swift */; };
-		8EA5B5E7293E020800F0AB09 /* GetStartedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B5E6293E020700F0AB09 /* GetStartedView.swift */; };
-		8EA5B5E9293E022000F0AB09 /* WelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EA5B5E8293E022000F0AB09 /* WelcomeView.xib */; };
-		8EA5B5EB293E022D00F0AB09 /* DescriptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EA5B5EA293E022D00F0AB09 /* DescriptionView.xib */; };
-		8EA5B5ED293E023B00F0AB09 /* GetStartedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EA5B5EC293E023B00F0AB09 /* GetStartedView.xib */; };
-		8EA5B5F2293E02A300F0AB09 /* GreetingScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA5B5F1293E02A300F0AB09 /* GreetingScreen.storyboard */; };
+		8E6F9EF12954569C00863824 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F9EF02954569C00863824 /* WelcomeViewController.swift */; };
+		8E6F9EF3295456AD00863824 /* WelcomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E6F9EF2295456AD00863824 /* WelcomeScreen.storyboard */; };
+		8E6F9EF5295456CA00863824 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F9EF4295456CA00863824 /* DescriptionViewController.swift */; };
+		8E6F9EF7295456DC00863824 /* DescriptionScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E6F9EF6295456DC00863824 /* DescriptionScreen.storyboard */; };
+		8E6F9EF9295456F100863824 /* GetStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F9EF8295456F100863824 /* GetStartedViewController.swift */; };
+		8E6F9EFB2954570800863824 /* GetStartedScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E6F9EFA2954570800863824 /* GetStartedScreen.storyboard */; };
+		8E6F9EFD2954671B00863824 /* CGColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F9EFC2954671B00863824 /* CGColor+Extension.swift */; };
 		8EA5B5F6293E034B00F0AB09 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B5F5293E034B00F0AB09 /* UIView+Extension.swift */; };
 		8EA5B5F8293E1C7900F0AB09 /* UINavigation+ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B5F7293E1C7900F0AB09 /* UINavigation+ViewControllerExtension.swift */; };
 		8EA5B5FC293E7AC800F0AB09 /* SetUpKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B5FB293E7AC800F0AB09 /* SetUpKeyboardViewController.swift */; };
@@ -62,7 +59,6 @@
 		8EA5B61E293F87C900F0AB09 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5B61D293F87C900F0AB09 /* HomeViewController.swift */; };
 		8EA5B620293F87D800F0AB09 /* HomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA5B61F293F87D800F0AB09 /* HomeScreen.storyboard */; };
 		8EF132A12938DF52001C3A65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF132A02938DF52001C3A65 /* AppDelegate.swift */; };
-		8EF132A32938DF52001C3A65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF132A22938DF52001C3A65 /* SceneDelegate.swift */; };
 		8EF132A52938DF52001C3A65 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF132A42938DF52001C3A65 /* LoginViewController.swift */; };
 		8EF132A82938DF52001C3A65 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EF132A62938DF52001C3A65 /* LoginScreen.storyboard */; };
 		8EF132AA2938DF59001C3A65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EF132A92938DF59001C3A65 /* Assets.xcassets */; };
@@ -94,8 +90,6 @@
 		8E32BE70294C746500AA814E /* UserFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFavorites.swift; sourceTree = "<group>"; };
 		8E484B622940AB60002FD4F4 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		8E484B642940AB75002FD4F4 /* FavoritesScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavoritesScreen.storyboard; sourceTree = "<group>"; };
-		8E484B662940AB8A002FD4F4 /* PairingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingViewController.swift; sourceTree = "<group>"; };
-		8E484B682940AB9D002FD4F4 /* PairingScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PairingScreen.storyboard; sourceTree = "<group>"; };
 		8E484B6A2940ABB0002FD4F4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		8E484B6C2940ABBF002FD4F4 /* ProfileScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileScreen.storyboard; sourceTree = "<group>"; };
 		8E484B752940AE75002FD4F4 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
@@ -104,14 +98,13 @@
 		8E484B7C2941E3DE002FD4F4 /* EditProfileScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditProfileScreen.storyboard; sourceTree = "<group>"; };
 		8E484B7E29433C94002FD4F4 /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
 		8E4B3AC629506C8900E30889 /* RealmCollection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealmCollection+Extension.swift"; sourceTree = "<group>"; };
-		8EA5B5D9293DFF7800F0AB09 /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
-		8EA5B5E2293E01AD00F0AB09 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
-		8EA5B5E4293E01F600F0AB09 /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
-		8EA5B5E6293E020700F0AB09 /* GetStartedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedView.swift; sourceTree = "<group>"; };
-		8EA5B5E8293E022000F0AB09 /* WelcomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeView.xib; sourceTree = "<group>"; };
-		8EA5B5EA293E022D00F0AB09 /* DescriptionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptionView.xib; sourceTree = "<group>"; };
-		8EA5B5EC293E023B00F0AB09 /* GetStartedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GetStartedView.xib; sourceTree = "<group>"; };
-		8EA5B5F1293E02A300F0AB09 /* GreetingScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GreetingScreen.storyboard; sourceTree = "<group>"; };
+		8E6F9EF02954569C00863824 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		8E6F9EF2295456AD00863824 /* WelcomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WelcomeScreen.storyboard; sourceTree = "<group>"; };
+		8E6F9EF4295456CA00863824 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		8E6F9EF6295456DC00863824 /* DescriptionScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DescriptionScreen.storyboard; sourceTree = "<group>"; };
+		8E6F9EF8295456F100863824 /* GetStartedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedViewController.swift; sourceTree = "<group>"; };
+		8E6F9EFA2954570800863824 /* GetStartedScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GetStartedScreen.storyboard; sourceTree = "<group>"; };
+		8E6F9EFC2954671B00863824 /* CGColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGColor+Extension.swift"; sourceTree = "<group>"; };
 		8EA5B5F5293E034B00F0AB09 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		8EA5B5F7293E1C7900F0AB09 /* UINavigation+ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigation+ViewControllerExtension.swift"; sourceTree = "<group>"; };
 		8EA5B5FA293E41A100F0AB09 /* Oh Vino.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Oh Vino.entitlements"; sourceTree = "<group>"; };
@@ -129,7 +122,6 @@
 		8EA5B61F293F87D800F0AB09 /* HomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeScreen.storyboard; sourceTree = "<group>"; };
 		8EF1329D2938DF52001C3A65 /* Oh Vino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Oh Vino.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF132A02938DF52001C3A65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8EF132A22938DF52001C3A65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8EF132A42938DF52001C3A65 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8EF132A72938DF52001C3A65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoginScreen.storyboard; sourceTree = "<group>"; };
 		8EF132A92938DF59001C3A65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -234,15 +226,6 @@
 			path = Favorites;
 			sourceTree = "<group>";
 		};
-		8E484B602940AB31002FD4F4 /* Pairing */ = {
-			isa = PBXGroup;
-			children = (
-				8E484B662940AB8A002FD4F4 /* PairingViewController.swift */,
-				8E484B682940AB9D002FD4F4 /* PairingScreen.storyboard */,
-			);
-			path = Pairing;
-			sourceTree = "<group>";
-		};
 		8E484B612940AB40002FD4F4 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,31 +281,21 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		8EA5B5D8293DFF5000F0AB09 /* Greeting */ = {
-			isa = PBXGroup;
-			children = (
-				8EA5B5DB293DFF7F00F0AB09 /* Custom views */,
-				8EA5B5D9293DFF7800F0AB09 /* GreetingViewController.swift */,
-				8EA5B5F1293E02A300F0AB09 /* GreetingScreen.storyboard */,
-			);
-			path = Greeting;
-			sourceTree = "<group>";
-		};
-		8EA5B5DB293DFF7F00F0AB09 /* Custom views */ = {
+		8EA5B5D8293DFF5000F0AB09 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
 				8EA5B5EE293E024000F0AB09 /* Welcome */,
 				8EA5B5EF293E025100F0AB09 /* Description */,
 				8EA5B5F0293E026300F0AB09 /* GetStarted */,
 			);
-			path = "Custom views";
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		8EA5B5EE293E024000F0AB09 /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
-				8EA5B5E2293E01AD00F0AB09 /* WelcomeView.swift */,
-				8EA5B5E8293E022000F0AB09 /* WelcomeView.xib */,
+				8E6F9EF02954569C00863824 /* WelcomeViewController.swift */,
+				8E6F9EF2295456AD00863824 /* WelcomeScreen.storyboard */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -330,8 +303,8 @@
 		8EA5B5EF293E025100F0AB09 /* Description */ = {
 			isa = PBXGroup;
 			children = (
-				8EA5B5E4293E01F600F0AB09 /* DescriptionView.swift */,
-				8EA5B5EA293E022D00F0AB09 /* DescriptionView.xib */,
+				8E6F9EF4295456CA00863824 /* DescriptionViewController.swift */,
+				8E6F9EF6295456DC00863824 /* DescriptionScreen.storyboard */,
 			);
 			path = Description;
 			sourceTree = "<group>";
@@ -339,8 +312,8 @@
 		8EA5B5F0293E026300F0AB09 /* GetStarted */ = {
 			isa = PBXGroup;
 			children = (
-				8EA5B5E6293E020700F0AB09 /* GetStartedView.swift */,
-				8EA5B5EC293E023B00F0AB09 /* GetStartedView.xib */,
+				8E6F9EF8295456F100863824 /* GetStartedViewController.swift */,
+				8E6F9EFA2954570800863824 /* GetStartedScreen.storyboard */,
 			);
 			path = GetStarted;
 			sourceTree = "<group>";
@@ -365,6 +338,7 @@
 				8E32BE6C294A124800AA814E /* LoaderExtension+ViewContoller.swift */,
 				8E32BE6E294B274E00AA814E /* UIImage+Extension.swift */,
 				8E4B3AC629506C8900E30889 /* RealmCollection+Extension.swift */,
+				8E6F9EFC2954671B00863824 /* CGColor+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -449,13 +423,12 @@
 		8EF132B42938E0A4001C3A65 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				8EA5B5D8293DFF5000F0AB09 /* Greeting */,
+				8EA5B5D8293DFF5000F0AB09 /* Onboarding */,
 				8EA5B5D4293DFAB200F0AB09 /* Login */,
 				8EA5B5D5293DFACA00F0AB09 /* Registration */,
 				8E484B722940AE15002FD4F4 /* Tabbar */,
 				8EA5B5D6293DFAD500F0AB09 /* Home */,
 				8E484B5F2940AB25002FD4F4 /* Favorites */,
-				8E484B602940AB31002FD4F4 /* Pairing */,
 				8E484B612940AB40002FD4F4 /* Profile */,
 				8E484B792941E3A6002FD4F4 /* Edit profile */,
 				8E32BE402948A5B900AA814E /* Change password */,
@@ -468,7 +441,6 @@
 			children = (
 				8EA5B5FA293E41A100F0AB09 /* Oh Vino.entitlements */,
 				8EF132A02938DF52001C3A65 /* AppDelegate.swift */,
-				8EF132A22938DF52001C3A65 /* SceneDelegate.swift */,
 				8EF132AB2938DF59001C3A65 /* LaunchScreen.storyboard */,
 				8EF132AE2938DF59001C3A65 /* Info.plist */,
 				8EF132B62938E0E6001C3A65 /* Resourse  */,
@@ -550,21 +522,19 @@
 			files = (
 				8E484B6D2940ABBF002FD4F4 /* ProfileScreen.storyboard in Resources */,
 				8EF132AD2938DF59001C3A65 /* LaunchScreen.storyboard in Resources */,
+				8E6F9EF3295456AD00863824 /* WelcomeScreen.storyboard in Resources */,
 				8E484B7D2941E3DE002FD4F4 /* EditProfileScreen.storyboard in Resources */,
 				8E32BE512949D2FE00AA814E /* TypeOfWinesCollectionViewCell.xib in Resources */,
-				8E484B692940AB9D002FD4F4 /* PairingScreen.storyboard in Resources */,
 				8EF132AA2938DF59001C3A65 /* Assets.xcassets in Resources */,
-				8EA5B5EB293E022D00F0AB09 /* DescriptionView.xib in Resources */,
 				8EF132A82938DF52001C3A65 /* LoginScreen.storyboard in Resources */,
-				8EA5B5F2293E02A300F0AB09 /* GreetingScreen.storyboard in Resources */,
-				8EA5B5E9293E022000F0AB09 /* WelcomeView.xib in Resources */,
+				8E6F9EFB2954570800863824 /* GetStartedScreen.storyboard in Resources */,
 				8E484B652940AB75002FD4F4 /* FavoritesScreen.storyboard in Resources */,
 				8E32BE552949D6CF00AA814E /* WineCollectionViewCell.xib in Resources */,
 				8EA5B620293F87D800F0AB09 /* HomeScreen.storyboard in Resources */,
-				8EA5B5ED293E023B00F0AB09 /* GetStartedView.xib in Resources */,
 				8E484B782940AE8E002FD4F4 /* TabBarScreen.storyboard in Resources */,
 				8EA5B601293E7E0E00F0AB09 /* RegistrationScreen.storyboard in Resources */,
 				8E32BE442948A5F800AA814E /* ChangePasswordScreen.storyboard in Resources */,
+				8E6F9EF7295456DC00863824 /* DescriptionScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,10 +598,13 @@
 				8E32BE6B294A0A1100AA814E /* WineModel.swift in Sources */,
 				8EA5B619293F802100F0AB09 /* LocalManager.swift in Sources */,
 				8E32BE572949E31900AA814E /* TypeOfWineEnum.swift in Sources */,
+				8E6F9EFD2954671B00863824 /* CGColor+Extension.swift in Sources */,
+				8E6F9EF9295456F100863824 /* GetStartedViewController.swift in Sources */,
 				8E32BE63294A050B00AA814E /* StatusModel.swift in Sources */,
 				8E32BE71294C746600AA814E /* UserFavorites.swift in Sources */,
 				8E32BE69294A081900AA814E /* TypesOfWine.swift in Sources */,
 				8E32BE67294A055C00AA814E /* ApiError.swift in Sources */,
+				8E6F9EF5295456CA00863824 /* DescriptionViewController.swift in Sources */,
 				8E4B3AC729506C8900E30889 /* RealmCollection+Extension.swift in Sources */,
 				8EA5B61C293F85A800F0AB09 /* UserDefaultsKeys.swift in Sources */,
 				8E484B6B2940ABB0002FD4F4 /* ProfileViewController.swift in Sources */,
@@ -644,21 +617,16 @@
 				8EA5B610293F756700F0AB09 /* RealmDataStore.swift in Sources */,
 				8E32BE422948A5E400AA814E /* ChangePasswordViewController.swift in Sources */,
 				8EA5B60A293F6F8800F0AB09 /* StringOptional+Extension.swift in Sources */,
-				8EA5B5E7293E020800F0AB09 /* GetStartedView.swift in Sources */,
+				8E6F9EF12954569C00863824 /* WelcomeViewController.swift in Sources */,
 				8E32BE6D294A124800AA814E /* LoaderExtension+ViewContoller.swift in Sources */,
-				8E484B672940AB8A002FD4F4 /* PairingViewController.swift in Sources */,
-				8EA5B5DA293DFF7800F0AB09 /* GreetingViewController.swift in Sources */,
 				8E32BE6F294B274E00AA814E /* UIImage+Extension.swift in Sources */,
 				8E484B762940AE75002FD4F4 /* TabBarViewController.swift in Sources */,
 				8EF132A12938DF52001C3A65 /* AppDelegate.swift in Sources */,
-				8EF132A32938DF52001C3A65 /* SceneDelegate.swift in Sources */,
-				8EA5B5E3293E01AD00F0AB09 /* WelcomeView.swift in Sources */,
 				8EA5B605293F41A300F0AB09 /* ImagePickerManager.swift in Sources */,
 				8E484B632940AB60002FD4F4 /* FavoritesViewController.swift in Sources */,
 				8E32BE61294A049600AA814E /* NetworkManagerHelper.swift in Sources */,
 				8E484B7B2941E3C9002FD4F4 /* EditProfileViewController.swift in Sources */,
 				8E484B7F29433C95002FD4F4 /* DataError.swift in Sources */,
-				8EA5B5E5293E01F600F0AB09 /* DescriptionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -813,7 +781,7 @@
 				INFOPLIST_FILE = "Oh Vino/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = GreetingScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = WelcomeScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -843,7 +811,7 @@
 				INFOPLIST_FILE = "Oh Vino/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = GreetingScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = WelcomeScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

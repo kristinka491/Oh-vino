@@ -22,12 +22,12 @@ class ChangePasswordViewController: UIViewController {
         setNewPassword()
     }
 
-    @IBAction func tappedHideNewPasswordButton(_ sender: UIButton) {
+    @IBAction private func tappedHideNewPasswordButton(_ sender: UIButton) {
         newPasswordTextField.isSecureTextEntry = !newPasswordTextField.isSecureTextEntry
         setToggleImage(newPasswordTextField.isSecureTextEntry, sender)
     }
 
-    @IBAction func tappedConfirmPasswordButton(_ sender: UIButton) {
+    @IBAction private func tappedConfirmPasswordButton(_ sender: UIButton) {
         confirmNewPasswordTextField.isSecureTextEntry = !confirmNewPasswordTextField.isSecureTextEntry
         setToggleImage(confirmNewPasswordTextField.isSecureTextEntry, sender)
     }

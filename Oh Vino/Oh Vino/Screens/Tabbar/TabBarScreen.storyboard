@@ -9,20 +9,20 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Epf-c7-ZKx">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qdQ-vU-ZcW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController storyboardIdentifier="TabBarScreen" automaticallyAdjustsScrollViewInsets="NO" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" interfaceStyle="light" id="xzO-Hs-shS" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YMj-8o-r20">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="selectedImageTintColor" red="0.61039102079999996" green="0.1183081344" blue="0.4259560704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="tPE-3Q-xza" kind="relationship" relationship="viewControllers" id="Xbe-Oe-5hT"/>
                         <segue destination="x8f-rH-ePs" kind="relationship" relationship="viewControllers" id="jV1-5s-9Eo"/>
-                        <segue destination="KCg-gV-oOD" kind="relationship" relationship="viewControllers" id="CMg-z1-xP1"/>
                         <segue destination="eL5-7B-F4I" kind="relationship" relationship="viewControllers" id="qrM-MC-xUl"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qdQ-vU-ZcW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-23.188405797101453" y="48.883928571428569"/>
         </scene>
@@ -45,16 +45,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TIv-GP-Got" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="613" y="-94"/>
-        </scene>
-        <!--PairingScreen-->
-        <scene sceneID="0dV-dN-alf">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="PairingScreen" storyboardName="PairingScreen" referencedIdentifier="PairingScreen" id="KCg-gV-oOD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="JbS-f0-8CH"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AUJ-ob-EaH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="622" y="162"/>
         </scene>
         <!--ProfileScreen-->
         <scene sceneID="ofP-dr-diC">

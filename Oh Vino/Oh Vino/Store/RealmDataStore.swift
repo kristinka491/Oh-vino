@@ -103,7 +103,6 @@ class RealmDataStore {
     func deleteFromFavorites(with wine: String) {
         if let userFavorite = realm?.object(ofType: UserFavorites.self,
                                             forPrimaryKey: wine) {
-
             try? realm?.write {
                 realm?.delete(userFavorite)
             }

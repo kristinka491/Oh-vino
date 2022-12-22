@@ -29,26 +29,26 @@ class ProfileViewController: UIViewController {
         getCurrentUser()
     }
 
-    @IBAction func tappedEditProfileButton(_ sender: UIButton) {
+    @IBAction private func tappedEditProfileButton(_ sender: UIButton) {
         if let controller = viewController(storyboardName: "EditProfileScreen", identifier: "EditProfileScreen", isNavigation: false) as? EditProfileViewController {
             controller.setUp(with: user)
             navigationController?.pushViewController(controller, animated: true)
         }
     }
 
-    @IBAction func tappedLogOutButton(_ sender: UIButton) {
+    @IBAction private func tappedLogOutButton(_ sender: UIButton) {
         cleanSavedData()
         moveToLoginScreen()
     }
 
-    @IBAction func tappedDeleteAccountButton(_ sender: UIButton) {
+    @IBAction private func tappedDeleteAccountButton(_ sender: UIButton) {
         if let login = user?.username {
             realmDataStore.deleteUser(with: login)
         }
         moveToLoginScreen()
     }
 
-    @IBAction func tappedChangePasswordButton(_ sender: UIButton) {
+    @IBAction private func tappedChangePasswordButton(_ sender: UIButton) {
         let controller = viewController(storyboardName: "ChangePasswordScreen", identifier: "ChangePasswordScreen", isNavigation: false)
         navigationController?.pushViewController(controller, animated: true)
     }
@@ -59,10 +59,8 @@ class ProfileViewController: UIViewController {
     }
 
     private func getCurrentUser() {
-        if let currentUserLogin = UserDefaults.standard.string(forKey: UserDefaultsKeys.currentUserLogin) {
-            user = realmDataStore.getUser(with: currentUserLogin)
-            setUpViewData()
-        }
+        user = realmDataStore.getCurrentUser()
+        setUpViewData()
     }
 
     private func setUpViewData() {

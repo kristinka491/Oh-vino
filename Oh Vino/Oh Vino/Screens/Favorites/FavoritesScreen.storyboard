@@ -30,7 +30,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Nvy-Vr-5YG">
-                                <rect key="frame" x="10" y="108.5" width="394" height="694.5"/>
+                                <rect key="frame" x="10" y="118.5" width="394" height="684.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Weu-ig-Qz3">
                                     <size key="itemSize" width="128" height="128"/>
@@ -50,7 +50,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="aVF-7N-cjK" secondAttribute="trailing" constant="20" id="da4-3e-azj"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Nvy-Vr-5YG" secondAttribute="bottom" constant="10" id="i41-HZ-LmN"/>
                             <constraint firstItem="aVF-7N-cjK" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="n9F-bb-nSb"/>
-                            <constraint firstItem="Nvy-Vr-5YG" firstAttribute="top" secondItem="aVF-7N-cjK" secondAttribute="bottom" constant="10" id="orl-GZ-Wj8"/>
+                            <constraint firstItem="Nvy-Vr-5YG" firstAttribute="top" secondItem="aVF-7N-cjK" secondAttribute="bottom" constant="20" id="orl-GZ-Wj8"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Favorites" image="star" catalog="system" id="Hbw-Vy-Oee"/>

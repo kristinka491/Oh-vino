@@ -23,11 +23,11 @@ class TypeOfWinesCollectionViewCell: UICollectionViewCell {
         }
     }
 
-    func setUpView() {
-        wineView.layer.cornerRadius = 20
-    }
-
     func setUpCell(_ typeOfWine: TypeOfWineEnum) {
         typeOfWineLabel.text = typeOfWine.rawValue
+    }
+
+    private func setUpView() {
+        wineView.layer.cornerRadius = 20
     }
 }

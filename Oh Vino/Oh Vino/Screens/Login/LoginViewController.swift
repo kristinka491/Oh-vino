@@ -27,12 +27,12 @@ class LoginViewController: SetUpKeyboardViewController {
         setUpSignInButton()
     }
 
-    @IBAction func tappedGetOneButton(_ sender: UIButton) {
+    @IBAction private func tappedGetOneButton(_ sender: UIButton) {
         let controller = viewController(storyboardName: "RegistrationScreen", identifier: "RegistrationScreen", isNavigation: false)
         navigationController?.pushViewController(controller, animated: true)
     }
 
-    @IBAction func tappedSignInButton(_ sender: UIButton) {
+    @IBAction private func tappedSignInButton(_ sender: UIButton) {
         if let userName = usernameTextField.text,
            let password = passwordTextField.text {
             let result = realmDataStore.loginUser(username: userName, password: password)
@@ -48,9 +48,18 @@ class LoginViewController: SetUpKeyboardViewController {
         }
     }
 
-    @IBAction func tappedHidePasswordButton(_ sender: UIButton) {
+    @IBAction private func tappedHidePasswordButton(_ sender: UIButton) {
         passwordTextField.isSecureTextEntry = !passwordTextField.isSecureTextEntry
         setPasswordToggleImage(sender)
+    }
+
+    @IBAction private func tappedRememberMeButton(_ sender: UIButton) {
+        if isButtonActive {
+            rememberMeButton.setImage(UIImage(named: "unchecked"), for: .normal)
+        } else {
+            rememberMeButton.setImage(UIImage(named: "checked"), for: .normal)
+        }
+        isButtonActive = !isButtonActive
     }
 
     private func saveToUserDefaults(username: String) {
@@ -70,15 +79,6 @@ class LoginViewController: SetUpKeyboardViewController {
         } else {
             button.setImage(UIImage(systemName: "eye.slash"), for: .normal)
         }
-    }
-
-    @IBAction private func tappedRememberMeButton(_ sender: UIButton) {
-        if isButtonActive {
-            rememberMeButton.setImage(UIImage(named: "unchecked"), for: .normal)
-        } else {
-            rememberMeButton.setImage(UIImage(named: "checked"), for: .normal)
-        }
-        isButtonActive = !isButtonActive
     }
 
     private func setUpformsView() {

@@ -13,8 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        setUpStartScreen()
         setUpNavigationBar()
+        setUpStartScreen()
         return true
     }
 
@@ -38,7 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 self.showScreen(with: "LoginScreen", viewControllerName: "LoginScreen")
             }
         } else {
-            self.showScreen(with: "GreetingScreen", viewControllerName: "GreetingScreen")
+            self.showScreen(with: "WelcomeScreen", viewControllerName: "WelcomeScreen")
         }
     }
 

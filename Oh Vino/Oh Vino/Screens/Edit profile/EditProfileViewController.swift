@@ -27,9 +27,20 @@ class EditProfileViewController: SetUpKeyboardViewController {
         setUpAvatarImage()
     }
 
-    @IBAction func tappedSaveChangesButton(_ sender: UIButton) {
+    @IBAction private func tappedSaveChangesButton(_ sender: UIButton) {
         changeProfile()
         navigationController?.popViewController(animated: true)
+    }
+
+    private var isChangedData: Bool {
+        if let user = user {
+            return user.name != nameTextField.text || isImageSet
+            }
+        return true
+    }
+
+    func setUp(with model: User?) {
+        user = model
     }
 
     private func changeProfile() {
@@ -56,17 +67,6 @@ class EditProfileViewController: SetUpKeyboardViewController {
             self?.isImageSet = true
             self?.setUpButtonActivity()
         }
-    }
-
-    private var isChangedData: Bool {
-        if let user = user {
-            return user.name != nameTextField.text || isImageSet
-            }
-        return true
-    }
-
-    func setUp(with model: User?) {
-        user = model
     }
 
     private func setUpButtonActivity() {
